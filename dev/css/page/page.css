@@ -12,12 +12,15 @@
 
 .page__header {
 	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
 	width: 100%;
-	margin: 0 auto;
-	background-color: rgba(255, 255, 255, .85);
+	background-color: rgba(255, 255, 255, .9);
 }
 
-.page__header--scrolled {
-	padding-top: 10px;
-  padding-bottom: 10px;
+.page__slider {
+	position: relative;
+	width: 100%;
+	margin: 77px auto 0 auto;
 }
