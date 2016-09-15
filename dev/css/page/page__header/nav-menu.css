@@ -1,0 +1,37 @@
+.nav-menu {
+	display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.nav-menu__item {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	padding: 16px 12px;
+	color: #707070;
+	transition: .35s ease;
+}
+
+.nav-menu__item:hover {
+	color: #282828;
+}
+
+.nav-menu__item--active {
+	color: #282828;
+}
+
+.nav-menu__item--underline:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 1px;
+	left: 10%;
+	bottom: 20%;
+	background-color: #707070;
+	transition: .5s ease;
+}
+
+.nav-menu__item--underline:hover:after {
+	width: 80%;
+}

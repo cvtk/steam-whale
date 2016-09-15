@@ -1,0 +1,23 @@
+.page {
+	position: relative;
+	color: #777777;
+  font-family: "PT Sans Regular",sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2;
+  min-width: 265px;
+  height: 10000px;
+}
+
+.page__header {
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, .85);
+}
+
+.page__header--scrolled {
+	padding-top: 10px;
+  padding-bottom: 10px;
+}
