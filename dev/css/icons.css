@@ -22,7 +22,6 @@
   font-size: 18px;
   font-style: normal;
   margin-left: 10px;
-  transition: .35s ease;
 }
 
 .icon--facebook:before { content: "\f100"; }
