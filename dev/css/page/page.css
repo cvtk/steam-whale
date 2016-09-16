@@ -1,13 +1,12 @@
 .page {
 	position: relative;
 	color: #777777;
-  font-family: "PT Sans Regular",sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   min-width: 265px;
-  height: 10000px;
 }
 
 .page__header {
@@ -23,4 +22,12 @@
 	position: relative;
 	width: 100%;
 	margin: 77px auto 0 auto;
+}
+
+.page__footer {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #282828;
 }

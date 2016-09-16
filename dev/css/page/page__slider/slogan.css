@@ -1,0 +1,27 @@
+.slogan {
+	font-family: "Roboto", sans-serif;
+}
+
+.slogan__header	{
+	font-weight: 300;
+	font-size: 28px;
+	color: #282828;
+	line-height: 1.2;
+}
+
+.slogan__link	{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #888;
+  white-space: nowrap;
+  padding: 0 0 3px 0;
+  border-bottom: 1px solid #cfcfcf;
+  text-decoration: none;
+  transition: .35s ease;
+}
+
+.slogan__link:hover	{
+	color: #dc9814;
+}

@@ -27,11 +27,11 @@
 	width: 0;
 	height: 1px;
 	left: 10%;
-	bottom: 20%;
-	background-color: #707070;
+	bottom: 15%;
+	background-color: #cfcfcf;
 	transition: .5s ease;
 }
 
 .nav-menu__item--underline:hover:after {
-	width: 80%;
+	width: 77%;
 }

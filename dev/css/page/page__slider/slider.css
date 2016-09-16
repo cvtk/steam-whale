@@ -1,4 +1,38 @@
 .slider {
+	display: block;
+	position: relative;
+	background-image: url(img/slider.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right top;
 	width: 100%;
-	height: auto;;
+	height: 700px;
+}
+
+.slider__slogan {
+	position: relative;
+  min-height: 1px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 10%;
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    background-image: url(img/slider-alt.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+  }
+  .slider__slogan {
+  	width: 100%;
+	}
+}
+
+.slider:after {
+	display: table;
+  content: " ";
+  clear: both;
 }

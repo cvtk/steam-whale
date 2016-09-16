@@ -1,0 +1,29 @@
+.nav-menu--footer {
+
+}
+
+.nav-menu--footer .nav-menu__item{
+	color: #aaaaaa;
+	font-size: 16px;
+}
+
+.nav-menu--footer .nav-menu__item:hover {
+	color: #eeeeee;
+}
+
+.nav-menu--footer .nav-menu__item--copyright {
+	color: #eeeeee;
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.nav-menu--footer .nav-menu__item {
+		display: block;
+		text-align: left;
+    padding: 3px 0;
+    border-bottom: 1px solid #3a3a3a;
+	}
+	.nav-menu--footer .nav-menu__item:last-child {
+		border: none;
+	}
+}
