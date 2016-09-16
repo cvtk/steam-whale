@@ -1,0 +1,26 @@
+.category-menu {
+	position: relative;
+}
+
+.category-menu__item {
+	display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #707070;
+  transition: .35s ease;
+}
+
+.category-menu__item:hover {
+	color: #dc9814;
+}
+
+.category-menu__item:after {
+	content: "/";
+	padding: 0 5px 0 10px;
+	color: #aaa;
+}
+
+.category-menu__item:last-child:after {
+	content: "";
+	padding-right: 0; 
+}

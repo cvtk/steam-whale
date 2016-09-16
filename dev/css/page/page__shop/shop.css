@@ -1,0 +1,32 @@
+.shop {
+  margin: 0 auto;
+  min-height: 600px;
+}
+
+.shop__shop-header {
+  position: relative;
+  padding: 52px 12px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .shop {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .shop {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .shop{
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .shop {
+    width: 1280px;
+  }
+}

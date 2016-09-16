@@ -1,0 +1,30 @@
+.search-menu {
+	position: relative;
+}
+
+.search-menu__item {
+	display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #707070;
+  transition: .35s ease;
+}
+
+.search-menu__item:hover {
+	color: #dc9814;
+}
+
+.search-menu__item:after {
+	content: "/";
+	padding: 0 5px 0 10px;
+	color: #aaa;
+}
+
+.search-menu__item:last-child:after {
+	content: "";
+	padding-right: 0; 
+}
+
+.search-menu__icon {
+	color: #aaa;
+}
