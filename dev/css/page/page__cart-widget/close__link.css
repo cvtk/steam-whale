@@ -2,9 +2,9 @@
 	display: block;
 	width: 100%;
 	color: #eee;
-	text-decoration: none;
 	border-bottom: 1px solid #464646;
 	padding: 22px 0;
+	cursor: pointer;
 	transition: .35s ease;
 }
 

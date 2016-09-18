@@ -1,19 +1,24 @@
 .cart-widget {
 	position: fixed;
-	display: none;
-	z-index: 11;
+	z-index: 12;
 	top:0;
-	right: 0;
+	right: -100%;
 	width: 400px;
 	height: 100%;
 	background-color: #333;
 	padding: 0 37px;
+	transition: .55s ease;
 }
+
 
 @media (max-width: 400px) {
   .cart-widget {
     width: 100%;
   }
+}
+
+.page__cart-widget--show .cart-widget {
+	right: 0;
 }
 
 .cart-widget__close-link {
