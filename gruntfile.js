@@ -17,8 +17,8 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: [
-                    'dev/js/*.js',
-                    'dev/js/**/*.js'
+                    'dev/css/*.js',
+                    'dev/css/**/*.js'
                 ],
                 dest: 'assets/a.js',
             },
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
 
         watch: {
             assets: {
-                files: ['index.html', 'dev/js/*.js', 'dev/js/**/*.js', 'dev/css/*.css', 'dev/css/**/*.css'],
+                files: ['index.html', 'dev/css/*.js', 'dev/css/**/*.js', 'dev/css/*.css', 'dev/css/**/*.css'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,

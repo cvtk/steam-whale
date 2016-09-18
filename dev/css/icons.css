@@ -24,9 +24,13 @@
   margin-left: 10px;
 }
 
-.icon--facebook:before { content: "\f100"; }
-.icon--mail:before { content: "\f101"; }
-.icon--search:before { content: "\f102"; }
-.icon--twitter:before { content: "\f103"; }
-.icon--vk:before { content: "\f104"; }
-.icon--wish:before { content: "\f105"; }
+.icon--close:before { content: "\f100"; }
+.icon--facebook:before { content: "\f101"; }
+.icon--mail:before { content: "\f102"; }
+.icon--play:before { content: "\f103"; }
+.icon--play-back:before { content: "\f103"; display: inline-block; transform: scale(-1,1);}
+.icon--ruble:before { content: "\f104"; }
+.icon--search:before { content: "\f105"; }
+.icon--twitter:before { content: "\f106"; }
+.icon--vk:before { content: "\f107"; }
+.icon--wish:before { content: "\f108"; }

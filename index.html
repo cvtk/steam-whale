@@ -6,6 +6,44 @@
 	<link rel="stylesheet" type="text/css" href="assets/a.css">
 </head>
 <body class="page">
+	<div class="page__cart-widget">
+		<div class="cart-widget" id="cartWidget">
+			<div class="cart-widget__close-link">
+				<a class="close-link" href="#">Закрыть</a>
+			</div>
+			<div class="cart-widget__products-list">
+				<div class="products-list">
+					<div class="products-list__item">
+						<div class="products-list-item">
+							<img class="products-list-item__image" src="assets/img/product-1.jpg"></img>
+							<span class="products-list-item__remove"><span class="icon--close"></span></span>
+							<a class="products-list-item__header" href="#">Пропиленгликоль, 30мл</a>
+							<div class="products-list-item__qty">Количество<span class="icon--play-back"></span>1<span class="icon--play"></span></div>
+							<span class="products-list-item__price">270 <span class="icon--ruble"></span></span>
+						</div>
+					</div>
+					<div class="products-list__item">
+						<div class="products-list-item">
+							<img class="products-list-item__image" src="assets/img/product-1.jpg"></img>
+							<span class="products-list-item__remove"><span class="icon--close"></span></span>
+							<a class="products-list-item__header" href="#">Пропиленгликоль, 30мл</a>
+							<div class="products-list-item__qty">Количество<span class="icon--play-back"></span>1<span class="icon--play"></span></div>
+							<span class="products-list-item__price">270 <span class="icon--ruble"></span></span>
+						</div>
+					</div>
+					<div class="products-list__item">
+						<div class="products-list-item">
+							<img class="products-list-item__image" src="assets/img/product-1.jpg"></img>
+							<span class="products-list-item__remove"><span class="icon--close"></span></span>
+							<a class="products-list-item__header" href="#">Пропиленгликоль, 30мл</a>
+							<div class="products-list-item__qty">Количество<span class="icon--play-back"></span>1<span class="icon--play"></span></div>
+							<span class="products-list-item__price">270 <span class="icon--ruble"></span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="page__header">
 		<div class="header">
 			<div class="header__mobile-menu">
@@ -38,7 +76,7 @@
 			<div class="header__user-menu">
 				<div class="user-menu">
 					<a class="user-menu__item user-menu__item--sign-in" href="#">Вход</a>
-					<a class="user-menu__item user-menu__item--cart" href="#">Корзина<span class="user-menu__cart-count">0</span></a>
+					<a class="user-menu__item user-menu__item--cart" id="userMenuCart" href="#">Корзина<span class="user-menu__cart-count">0</span></a>
 				</div>
 			</div>
 		</div>

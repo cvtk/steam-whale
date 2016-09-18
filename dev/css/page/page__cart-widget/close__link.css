@@ -1,0 +1,13 @@
+.close-link {
+	display: block;
+	width: 100%;
+	color: #eee;
+	text-decoration: none;
+	border-bottom: 1px solid #464646;
+	padding: 22px 0;
+	transition: .35s ease;
+}
+
+.close-link:hover	{
+	color: #dc9814;
+}
