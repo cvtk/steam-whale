@@ -3,11 +3,26 @@
   min-height: 600px;
 }
 
+.shop:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.shop:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
 .shop__shop-header {
   position: relative;
   padding: 52px 12px;
   width: 100%;
 }
+
+.shop__products {
+}
+
 
 @media (min-width: 768px) {
   .shop {

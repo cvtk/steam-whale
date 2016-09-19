@@ -8,6 +8,6 @@
 		event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)
 		myself.classList.toggle('page__cart-widget--show');
 	}
-	myself.onclick = function(event) {
-		this.classList.toggle('page__cart-widget--show');
-	}
+	// myself.onclick = function(event) {
+	// 	this.classList.toggle('page__cart-widget--show');
+	// }
