@@ -4,7 +4,7 @@
 	trigger.onclick = function() {
 		myself.classList.toggle('page__cart-widget--show');
 	}
-	document.getElementById('closeLink').onclick = function(event) {
+	document.getElementById('cartWidgetCloseLink').onclick = function(event) {
 		event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)
 		myself.classList.toggle('page__cart-widget--show');
 	}

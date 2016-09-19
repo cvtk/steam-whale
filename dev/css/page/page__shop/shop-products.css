@@ -1,9 +1,16 @@
 .shop-products {
-	position: relative;
-	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-bottom: 52px;
 }
+
+.shop-products:before, 
+.shop-products:after {
+	display: table;
+  content: " ";
+  clear: both;
+}
+
 .shop-products__item {
 	position: relative;
 	width: 100%;

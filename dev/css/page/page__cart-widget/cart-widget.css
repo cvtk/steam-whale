@@ -10,7 +10,6 @@
 	transition: .55s ease;
 }
 
-
 @media (max-width: 400px) {
   .cart-widget {
     width: 100%;
@@ -19,19 +18,4 @@
 
 .page__cart-widget--show .cart-widget {
 	right: 0;
-}
-
-.cart-widget__close-link {
-	position: relative;
-	text-align: right;
-
-}
-
-.cart-widget__close-link:after {
-	content: "";
-	clear: both;
-}
-
-.cart-widget__products-list {
-
 }

@@ -2,10 +2,6 @@
 	padding: 7px 0 6px 0;
 }
 
-.products-list__item {
-
-}
-
 .products-list-item {
 	position: relative;
 	font-size: 16px;
@@ -110,9 +106,6 @@
 }
 }
 
-.cart-widget__bottom-menu {
-}
-
 .cart-widget-bottom-menu {
 	position: absolute;
   width: 100%;
@@ -160,10 +153,6 @@
 	display: block;
 	content: "";
 	clear: both;
-}
-
-.cart-widget__checkout {
-
 }
 
 .cart-widget-checkout {

@@ -1,13 +1,14 @@
-.close-link {
+.cart-widget-close-link {
 	display: block;
 	width: 100%;
 	color: #eee;
 	border-bottom: 1px solid #464646;
 	padding: 22px 0;
+	text-align: right;
 	cursor: pointer;
 	transition: .35s ease;
 }
 
-.close-link:hover	{
+.cart-widget-close-link:hover	{
 	color: #dc9814;
 }
