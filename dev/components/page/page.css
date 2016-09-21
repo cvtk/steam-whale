@@ -50,3 +50,9 @@
 	width: 100%;
 	background-color: #282828;
 }
+
+.page__product-content {
+	position: relative;
+	width: 100%;
+	background-color: #eee;
+}

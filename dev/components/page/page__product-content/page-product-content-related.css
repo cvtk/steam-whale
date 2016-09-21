@@ -1,0 +1,11 @@
+.page-product-content-related {
+	padding: 20px 12px;
+}
+
+.page-product-content-related__header {
+	font-size: 22px;
+	font-weight: 400;
+	color:#282828;
+	padding: 28px 16px;
+	margin: 0;
+}

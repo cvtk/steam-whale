@@ -1,6 +1,5 @@
 .shop {
   margin: 0 auto;
-  min-height: 600px;
 }
 
 .shop:after {
@@ -23,6 +22,12 @@
 .shop__products {
 }
 
+.shop__more-products-button {
+  width: 175px;
+  margin: 0 auto;
+  padding-bottom: 52px;
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   .shop {

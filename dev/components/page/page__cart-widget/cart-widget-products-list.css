@@ -55,7 +55,7 @@
 	padding: 0 0 0 20px;
 }
 
-.products-list-item__qty > .icon--play-back:before, .icon--play:before {
+.products-list-item__qty > .icon--play-back:before, .products-list-item__qty > .icon--play:before {
 	font-size: 10px;
 	vertical-align: middle;
 	margin: 0;
@@ -64,7 +64,7 @@
 	transition: .35s ease;
 }
 
-.products-list-item__qty > .icon--play-back:hover, .icon--play:hover {
+.products-list-item__qty > .icon--play-back:hover, .products-list-item__qty > .icon--play:hover {
 	color: #eee;
 }
 

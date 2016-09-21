@@ -17,16 +17,17 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: [
-                    'dev/css/*.js',
-                    'dev/css/**/*.js'
+                    'dev/libs/*.js',
+                    'dev/components/*.js',
+                    'dev/components/**/*.js'
                 ],
                 dest: 'assets/a.js',
             },
             css: {
                 src: [
-                    'dev/css/libs/*.css',
-                    'dev/css/*.css',
-                    'dev/css/**/*.css'
+                    'dev/libs/*.css',
+                    'dev/components/*.css',
+                    'dev/components/**/*.css'
                 ],
                 dest: 'assets/a.css',
             },
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
 
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']
             },
             main: {
                 src: 'assets/a.css',
@@ -92,7 +93,7 @@ module.exports = function(grunt) {
 
         watch: {
             assets: {
-                files: ['index.html', 'dev/css/*.js', 'dev/css/**/*.js', 'dev/css/*.css', 'dev/css/**/*.css'],
+                files: ['index.html', 'product-single.html', 'dev/components/*.js', 'dev/components/**/*.js', 'dev/components/*.css', 'dev/components/**/*.css'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,

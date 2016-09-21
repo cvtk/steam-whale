@@ -16,6 +16,6 @@
   }
 }
 
-.page__cart-widget--show .cart-widget {
+.page__cart-widget--show > .cart-widget {
 	right: 0;
 }

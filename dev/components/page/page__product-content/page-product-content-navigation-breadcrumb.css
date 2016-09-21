@@ -1,0 +1,32 @@
+.page-product-content-navigation-breadcrumb {
+	position: relative;
+}
+
+.page-product-content-navigation-breadcrumb__item {
+	display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: .35s ease;
+}
+
+.page-product-content-navigation-breadcrumb__item:hover {
+	color: #dc9814;
+}
+
+.page-product-content-navigation-breadcrumb__item--active,
+.page-product-content-navigation-breadcrumb__item--active:hover {
+	color: #a1a1a1;
+}
+
+.page-product-content-navigation-breadcrumb__item:after {
+	content: "/";
+	padding: 0 5px 0 10px;
+	color: #aaa;
+}
+
+.page-product-content-navigation-breadcrumb__item:last-child:after {
+	content: "";
+	padding-right: 0; 
+}
