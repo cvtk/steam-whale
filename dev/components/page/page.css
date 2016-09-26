@@ -6,7 +6,8 @@
   font-style: normal;
   font-size: 18px;
   line-height: 2;
-  min-width: 265px;
+  min-width: 330px;
+  padding-top: 81px;
 }
 
 .page__cart-widget {
@@ -26,17 +27,16 @@
 
 .page__header {
 	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	width: 100%;
-	background-color: #fff;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
 }
 
 .page__slider {
 	position: relative;
 	width: 100%;
-	margin: 77px auto 0 auto;
 }
 
 .page__shop {
@@ -51,7 +51,23 @@
 	background-color: #282828;
 }
 
-.page__product-content {
+.page__navigation {
+	position: relative;
+	width: 100%;
+	background-color: #eee;
+}
+
+.page__product-item {
+	position: relative;
+	width: 100%;
+	background-color: #eee;
+}
+
+.page__product-description {
+
+}
+
+.page__related-products {
 	position: relative;
 	width: 100%;
 	background-color: #eee;

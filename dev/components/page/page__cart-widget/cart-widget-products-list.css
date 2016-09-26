@@ -24,10 +24,12 @@
   top: 0;
   right: 0;
   display: block;
-  text-align: right;
   color: #a5a5a5;
-  cursor: pointer;
   transition: .35s ease;
+  padding: 0;
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
 }
 
 .products-list-item__remove:hover {
@@ -49,7 +51,7 @@
 
 .products-list-item__qty {
 	display: block;
-	width: 50%;
+	width: 60%;
 	float: left;
 	color: #a5a5a5;
 	padding: 0 0 0 20px;
@@ -70,14 +72,14 @@
 
 .products-list-item__price {
 	display: block;
-	width: 30%;
+	width: 20%;
 	float: left;
 	text-align: right;
 }
 
 .products-list-item__price > .icon--ruble:before {
 	font-size: 14px;
-	margin: -3px;
+	margin: 0;
 }
 
 .products-list__item:after {

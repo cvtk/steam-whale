@@ -1,0 +1,18 @@
+.page-navigation-buttons {
+	text-align: right;
+	vertical-align: middle;
+}
+
+.page-navigation-buttons__next,
+.page-navigation-buttons__previous {
+	text-decoration: none;
+	color: #a1a1a1;
+	font-size: 16px;
+	transition: .35s ease;
+}
+
+.page-navigation-buttons__previous:hover,
+.page-navigation-buttons__next:hover {
+	color: #dc9814;
+}
+

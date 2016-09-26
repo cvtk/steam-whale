@@ -1,11 +1,12 @@
-.mobile-menu {
+.page-header-mobile-menu {
 	position: relative;
 	padding: 16px 12px;
  	overflow: hidden;
 }
 
 
-.hamburger-icon {
+.page-header-mobile-menu__hamburger-icon {
+  display: block;
 	width: 21px;
   height: 16px;
   position: relative;
@@ -20,7 +21,7 @@
   cursor: pointer;
 }
 
-.hamburger-icon__line {
+.page-header-mobile-menu-hamburger-icon__line {
   display: block;
   position: absolute;
   height: 1px;
@@ -38,23 +39,23 @@
   transition: .25s ease-in-out;
 }
 
-.hamburger-icon__line:nth-child(1) {
+.page-header-mobile-menu-hamburger-icon__line:nth-child(1) {
   top: 0px;
 }
 
-.hamburger-icon__line:nth-child(2) {
+.page-header-mobile-menu-hamburger-icon__line:nth-child(2) {
   top: 7px;
 }
 
-.hamburger-icon__line:nth-child(3) {
+.page-header-mobile-menu-hamburger-icon__line:nth-child(3) {
   top: 14px;
 }
 
-.mobile-menu__state {
+.page-header-mobile-menu__state {
 	display: none;
 }
 
-.mobile-menu__state:checked + .mobile-menu__hamburger-icon .hamburger-icon__line:nth-child(1) {
+.page-header-mobile-menu__state:checked + .page-header-mobile-menu__hamburger-icon .page-header-mobile-menu-hamburger-icon__line:nth-child(1) {
   top: 7px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -62,12 +63,12 @@
   transform: rotate(135deg);
 }
 
-.mobile-menu__state:checked + .mobile-menu__hamburger-icon .hamburger-icon__line:nth-child(2) {
+.page-header-mobile-menu__state:checked + .page-header-mobile-menu__hamburger-icon .page-header-mobile-menu-hamburger-icon__line:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
-.mobile-menu__state:checked + .mobile-menu__hamburger-icon .hamburger-icon__line:nth-child(3) {
+.page-header-mobile-menu__state:checked + .page-header-mobile-menu__hamburger-icon .page-header-mobile-menu-hamburger-icon__line:nth-child(3) {
   top: 7px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -75,7 +76,7 @@
   transform: rotate(-135deg);
 }
 
-.mobile-menu__cart-count {
+.page-header-mobile-menu__cart-count {
 	display: none;
   position: absolute;
   left: 2%;
@@ -86,13 +87,13 @@
 }
 
 @media (max-width: 400px) {
-  .mobile-menu {
+  .page-header-mobile-menu {
     float: right;
   }
-  .mobile-menu__state:checked + .mobile-menu__hamburger-icon .hamburger-icon__line:nth-child(2) {
+  .page-header-mobile-menu__state:checked + .page-header-mobile-menu__hamburger-icon .page-header-hamburger-icon__line:nth-child(2) {
   left: 60px;
 	}
-	.mobile-menu__cart-count {
+	.page-header-mobile-menu__cart-count {
 	display: block;
 	}
 }

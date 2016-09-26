@@ -1,11 +1,11 @@
-.user-menu {
+.page-header-user-menu {
 	display: inline-block;
   line-height: 1;
   vertical-align: middle;
   float: right;
 }
 
-.user-menu__item {
+.page-header-user-menu__item {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
@@ -14,24 +14,24 @@
 	transition: .35s ease;
 }
 
-.user-menu__item:hover {
+.page-header-user-menu__item:hover {
 	color: #282828;
 }
 
-.nav-menu__item--active {
+.page-header-user-menu__item--active {
 	color: #282828;
 }
 
-.user-menu__cart-count {
+.page-header-user-menu__cart-count {
   position: absolute;
-  right: 2%;
+  right: -3px;
   top: 20%;
   font-size: 14px;
   color: #dc9814;
 }
 
 @media (max-width: 768px) {
-  .user-menu__item--sign-in {
+  .page-header-user-menu__item--sign-in {
     display:none;
   }
 }

@@ -1,10 +1,9 @@
-.nav-menu {
+.page-header-nav-menu {
 	display: inline-block;
   line-height: 1;
-  vertical-align: middle;
 }
 
-.nav-menu__item {
+.page-header-nav-menu__item {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
@@ -13,15 +12,15 @@
 	transition: .35s ease;
 }
 
-.nav-menu__item:hover {
+.page-header-nav-menu__item:hover {
 	color: #282828;
 }
 
-.nav-menu__item--active {
+.page-header-nav-menu__item--active {
 	color: #282828;
 }
 
-.nav-menu__item--underline:after {
+.page-header-nav-menu__item--underline:after {
 	content: "";
 	position: absolute;
 	width: 0;
@@ -32,6 +31,6 @@
 	transition: .5s ease;
 }
 
-.nav-menu__item--underline:hover:after {
+.page-header-nav-menu__item--underline:hover:after {
 	width: 77%;
 }

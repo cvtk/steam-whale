@@ -23,6 +23,7 @@ module.exports = function(grunt) {
                 ],
                 dest: 'assets/a.js',
             },
+
             css: {
                 src: [
                     'dev/libs/*.css',
@@ -47,13 +48,18 @@ module.exports = function(grunt) {
             js: {
                 src: 'assets/a.js',
                 dest: 'assets/a.js'
+            },
+
+            jsb: {
+                src: 'dev/minishop2_default.js',
+                dest: 'assets/b.js'
             }
         },
 
         uncss: {
             dist: {
                 files: {
-                    'assets/a.css': ['index.html']
+                    'assets/a.css': ['index.html', 'product-single.html']
                 }
             }
         },
@@ -111,6 +117,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['copy', 'concat', 'autoprefixer', 'uglify', 'imagemin', 'uncss', 'cssmin']);
+    grunt.registerTask('default', ['copy', 'concat', 'autoprefixer', 'uglify', 'imagemin', 'cssmin']);
     grunt.registerTask('dev', ['connect', 'watch']);
 };
