@@ -1,4 +1,3 @@
-var app = {};
 app.cartWidget = {};
 app.cartWidget.update = function() {
 	$('#userMenuCart').unbind("click").bind('click', function() {

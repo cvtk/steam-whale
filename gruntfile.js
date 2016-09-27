@@ -18,6 +18,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     'dev/libs/*.js',
+                    'dev/init.js',
                     'dev/components/*.js',
                     'dev/components/**/*.js'
                 ],
@@ -51,7 +52,7 @@ module.exports = function(grunt) {
             },
 
             jsb: {
-                src: 'dev/minishop2_default.js',
+                src: 'dev/last.js',
                 dest: 'assets/b.js'
             }
         },
