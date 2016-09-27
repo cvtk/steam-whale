@@ -1,15 +1,18 @@
-.slogan {
+.page-slider-item-slogan {
+  width: 450px;
 	font-family: "Roboto", sans-serif;
+  background-color: rgba(255,255,255, .5);
+  padding: 20px 30px;
 }
 
-.slogan__header	{
+.page-slider-item-slogan__header	{
 	font-weight: 300;
 	font-size: 28px;
 	color: #282828;
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
-.slogan__link	{
+.page-slider-item-slogan__link	{
   display: inline-block;
   font-size: 20px;
   font-weight: 300;
@@ -22,6 +25,6 @@
   transition: .35s ease;
 }
 
-.slogan__link:hover	{
+.page-slider-item-slogan__link:hover	{
 	color: #dc9814;
 }

@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 
         watch: {
             assets: {
-                files: ['index.html', 'product-single.html', 'dev/components/*.js', 'dev/components/**/*.js', 'dev/components/*.css', 'dev/components/**/*.css'],
+                files: ['index.html', 'dev/components/*.js', 'dev/components/**/*.js', 'dev/components/*.css', 'dev/components/**/*.css'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,
