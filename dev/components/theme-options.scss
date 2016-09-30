@@ -1,0 +1,29 @@
+$primary-color: #707070;
+$secondary-color: #dc9814;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.base-layout {
+	padding: 15px;
+  min-height: 1px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+@media (min-width: 768px) { .base-layout { width: 750px; } }
+@media (min-width: 992px) { .base-layout { width: 970px; } }
+@media (min-width: 1200px) { .base-layout { width: 1170px; } }
+@media (min-width: 1280px) { .base-layout { width: 1280px; } }

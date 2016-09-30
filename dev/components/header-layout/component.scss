@@ -1,0 +1,47 @@
+.header-layout {
+	@include clearfix;
+	@extend .base-layout;
+	
+	&._scrolled {
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+	.
+	margin: 0 auto;
+	line-height: 50px;
+	transition: .35s ease-in-out;
+
+	> .mobile-menu {
+		display: none;
+		float: left;
+		width: 20%;
+	}
+
+	> .main-menu {
+		float: left;
+		width: 40%;	
+	}
+
+	> .simple-logo {
+		float: left;
+		width: 20%;
+	}
+
+	> .user-menu {
+		float: right;
+		width: 20%;
+	}
+
+	@media (max-width: 768px) {
+  .mobile-menu {
+    display:block;
+  }
+}
+
+	@media (max-width: 400px) {
+  .mobile-menu {
+    display:block;
+    float: right;
+  }
+}
+}

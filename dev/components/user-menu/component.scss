@@ -1,0 +1,15 @@
+.user-menu {
+	position: relative;
+
+	> .item {
+		position: relative;
+		padding: 16px 12px;
+		line-height: 1;
+		text-decoration: none;
+		cursor: pointer;
+		transition: .35s ease-in-out;
+	  color: $primary-color;
+
+	  &:hover { color: $secondary-color; }
+	}
+}

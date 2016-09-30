@@ -37,7 +37,7 @@
 	height: 50px;
 }
 
-.page-header-user-menu-login-panel__item: after {
+.page-header-user-menu-login-panel__item:after {
 	content: " ";
 	display: table;
 	clear: both;

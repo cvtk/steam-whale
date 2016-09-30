@@ -1,0 +1,28 @@
+.minicart-widget {
+	&._hided {
+		right: -100%;
+	}
+	position: fixed;
+	top: 0;
+	right: 0;
+	min-width: 330px;
+	width: 25%;
+	z-index: 4;
+  height: 100%;
+  background-color: #333;
+  transition: .35s ease-in-out;
+  padding: 0 35px;
+  text-align: right;
+	> .close {
+		display: block;
+		color: #eee;
+		cursor: pointer;
+		padding: 25px 0;
+		transition: inherit;
+		border-bottom: 1px solid #464646;
+	}
+
+	> .close:hover {
+		color: $secondary-color;
+	}
+}
