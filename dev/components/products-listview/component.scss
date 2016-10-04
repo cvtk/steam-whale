@@ -1,0 +1,58 @@
+.products-listview {
+	padding: 7px 0;
+	height: 60vh;
+	min-height: 200px;
+	overflow-y: auto;
+	> .item {
+			position: relative;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #464646;
+			font-size: 16px;
+			line-height: 36px;
+			&:after {
+				display: table;
+				content: "";
+				clear: both;
+			}
+		> .thumb {
+				display: block;
+				width: 20%;
+				height: 72px;
+				margin-right: 5%;
+				float: left;
+		}
+		> .title {
+				display: block;
+				width: 70%;
+				float: left;
+				color: #eee;
+				text-decoration: none;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+		}
+		> .remove {
+				position: absolute;
+				top:0;
+				right: 0;
+				width: 5%;
+				color: #a5a5a5;
+				transition: .35s ease;
+				cursor: pointer;
+				&:hover {color: #eee}
+		}
+		> .qty {
+				display: block;
+				width: 55%;
+				float: left;		
+		}
+		> .price {
+				display: block;
+				width: 20%;
+				color: #eee;
+				float: left;
+				text-align: right;
+		}
+	}
+}

@@ -1,5 +1,5 @@
 .minicart-widget {
-	&._hided {
+	&._hidden {
 		right: -100%;
 	}
 
@@ -13,7 +13,6 @@
   background-color: #333;
   transition: right 1s cubic-bezier(.61,.44,.17,1.2);
   padding: 0 35px;
-  text-align: right;
 
   &:after {
   	content: "";
@@ -27,6 +26,7 @@
 	> .close {
 		display: block;
 		color: #eee;
+		text-align: right;
 		cursor: pointer;
 		padding: 25px 0;
 		transition: color .35s ease-in-out;
