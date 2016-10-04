@@ -455,8 +455,7 @@ header {
     background: #dc9814; }
 
 .header-layout {
-  .
-	margin: 0 auto;
+  margin: 0 auto;
   line-height: 50px;
   transition: .35s ease-in-out; }
   .header-layout:after {
@@ -565,17 +564,25 @@ header {
   z-index: 4;
   height: 100%;
   background-color: #333;
-  transition: .35s ease-in-out;
+  transition: right 1s cubic-bezier(0.61, 0.44, 0.17, 1.2);
   padding: 0 35px;
   text-align: right; }
   .minicart-widget._hided {
     right: -100%; }
+  .minicart-widget:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    right: -100%;
+    top: 0; }
   .minicart-widget > .close {
     display: block;
     color: #eee;
     cursor: pointer;
     padding: 25px 0;
-    transition: inherit;
+    transition: color .35s ease-in-out;
     border-bottom: 1px solid #464646; }
   .minicart-widget > .close:hover {
     color: #dc9814; }

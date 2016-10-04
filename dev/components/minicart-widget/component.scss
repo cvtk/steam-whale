@@ -2,6 +2,7 @@
 	&._hided {
 		right: -100%;
 	}
+
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -10,15 +11,25 @@
 	z-index: 4;
   height: 100%;
   background-color: #333;
-  transition: .35s ease-in-out;
+  transition: right 1s cubic-bezier(.61,.44,.17,1.2);
   padding: 0 35px;
   text-align: right;
+
+  &:after {
+  	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    right: -100%;
+    top: 0;
+  }
 	> .close {
 		display: block;
 		color: #eee;
 		cursor: pointer;
 		padding: 25px 0;
-		transition: inherit;
+		transition: color .35s ease-in-out;
 		border-bottom: 1px solid #464646;
 	}
 
