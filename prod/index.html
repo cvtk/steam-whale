@@ -5,44 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="a.css">
 </head>
-<body class="page">
+<body class="page-layout">
 	<div class="minicart-widget _hidden" id="minicartWidget">
 		<span class="close" data-minicart-trigger>Закрыть</span>
 		<div class="products-listview">
 	<div class="item">
 		<img class="thumb" src="img/product-1.jpg" />
 		<a class="title" href="#">Product Title Steam Product lequid</a>
-		<span class="remove">x</span>
+		<span class="remove" title="Удалить товар"></span>
 		<span class="qty">Количество: 5</span>
 		<span class="price">550</span>
 	</div>
 	<div class="item">
 		<img class="thumb" src="img/product-1.jpg" />
 		<a class="title" href="#">Steam Product lequid</a>
-		<span class="remove">x</span>
+		<span class="remove"></span>
 		<span class="qty">Количество: 3</span>
 		<span class="price">12250</span>
 	</div>
-	<div class="item">
-		<img class="thumb" src="img/product-1.jpg" />
-		<a class="title" href="#">Steam Product lequid</a>
-		<span class="remove">x</span>
-		<span class="qty">Количество: 3</span>
-		<span class="price">12250</span>
-	</div>
-	<div class="item">
-		<img class="thumb" src="img/product-1.jpg" />
-		<a class="title" href="#">Steam Product lequid</a>
-		<span class="remove">x</span>
-		<span class="qty">Количество: 3</span>
-		<span class="price">12250</span>
-	</div>
-	
 </div>
+		<div class="summary-price">
+			<span class="title">Итог:</span>
+			<span class="price">550</span>
+		</div>
+		<a class="order" href="#">Оформить заказ</a>
+</div>
+	<div class="mobile-dropdown _hidden" id="mobileDropdown">
+	<a class="item _cart" data-minicart-trigger>Корзина <span class="count">(0)</span></a>
+	<a class="item">Главная</a>
+	<a class="item">Магазин</a>
+	<a class="item">О нас</a>
+	<a class="item">Вход</a>
+
 </div>
 	<header>
 		<div class="header-layout" id="headerLayout">
-			<div class="mobile-menu">
+			<div class="mobile-menu" data-mobile-dropdown-trigger>
 	<span class="cart-count" id="cartCount">2</span>
 	<span class="humburger-icon" id="hamburgerIcon">
 	<span class="line"></span>
@@ -67,100 +65,22 @@
 		</div>
 	</header>
 
-	
-<!-- 	<div class="page__cart-widget" id="pageCartWidget">
-		<div class="cart-widget">
-			<div class="cart-widget__close-link">
-				<span class="cart-widget-close-link" id="cartWidgetCloseLink">Закрыть</span>
-			</div>
-			<div class="cart-widget__products-list">
-				<div class="products-list">
-					<div class="products-list__item">
-						<div class="products-list-item">
-							<img class="products-list-item__image" src="assets/img/product-1.jpg" />
-							<span class="products-list-item__remove"><span class="icon--close"></span></span>
-							<a class="products-list-item__header" href="#">Пропиленгликоль, 30мл</a>
-							<div class="products-list-item__qty">Количество<span class="icon--play-back"></span>1<span class="icon--play"></span></div>
-							<span class="products-list-item__price">270 <span class="icon--ruble"></span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="cart-widget__bottom-menu">
-				<div class="cart-widget-bottom-menu">
-					<div class="cart-widget__price-subtotal">
-						<div class="cart-widget-price-subtotal">
-							<span class="cart-widget-price-subtotal__title">Итог:</span>
-							<span class="cart-widget-price-subtotal__summary">10345<span class="icon--ruble"></span></span>
-						</div>
-					</div>
-					<div class="cart-widget__checkout">
-						<a class="cart-widget-checkout" href="#">Оформить заказ</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- <div class="page__header">
-		<div class="page-header">
-			<div class="page-header__mobile-menu">
-				<div class="mobile-menu">
-	<span class="cart-count" id="cartCount">2</span>
-	<span class="humburger-icon" id="hamburgerIcon">
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-</span>
-</div>
-			</div>
-			<div class="page-header__nav-menu">
-				<nav class="main-menu">
-	<a class="item" href="#">Главная</a>
-	<a class="item" href="#">Магазин</a>
-	<a class="item" href="#">О нас</a>
-</nav>
-			</div>
-			<div class="page-header__logo">
-				<div class="simple-logo">
-	<a class="link" style="background-image: url('img/logo.png'); " href="#"></a>
-</div>
-			</div>
-			<div class="page-header__user-menu">
-				<nav class="user-menu">
-	<a class="item" href="#">Вход</a>
-	<a class="item" href="#" data-minicart-trigger>Корзина 
-		<span class="cart-count" id="cartCount">2</span>
-	</a>
-</nav>
-				<div class="page-header-user-menu">
-					<span class="page-header-user-menu__item page-header-user-menu__item--sign-in" href="#" id="userMenuLogin">Вход
-							<div class="page-header-user-menu__login-panel">
-								<div class="page-header-user-menu-login-panel">
-									<a class="page-header-user-menu-login-panel__item" href="#"></a>
-									<a class="page-header-user-menu-login-panel__item" href="#"></a>
-								</div>
-							</div>
-					</span>
-					<span class="page-header-user-menu__item page-header-user-menu__item--cart" id="userMenuCart" href="#">Корзина<span class="page-header-user-menu__cart-count">0</span></span>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<div class="page__slider">
-		<div class="page-slider" id="pageSlider">
-			<div class="page-slider__item">
-				<div class="page-slider-item page-slider-item--active">
-					<img class="page-slider-item__img" src="assets/img/slider-1.jpg" />
-					<div class="page-slider-item__slogan">
-						<div class="page-slider-item-slogan">
-							<h1 class="page-slider-item-slogan__header">Новый хит уходящего лета! Освежающий лайм с тонкими нотками ананаса</h1>
-							<a class="page-slider-item-slogan__link" href="#">dr. Grime 30ml</a>
-						</div>
-				</div>
-				</div>
-			</div>
-		</div>
+	<div class="slider-layout">
+		<div class="slider-carousel" id="sliderCarousel" data-interval="1500">
+	<div class="heading-box">
+		<h2 class="title">Новые линейка жидкостей!</h2>
+		<p class="text">Торопитесь скорее иначе все купят и вы ничего не успеете купить и вообще беда тогда</p>
+		<a class="link" href="#">Жидкости Steam Whale</a>
 	</div>
+	<img class="item" src="img/slider.jpg" />
+	<img class="item" src="img/slider.jpg" />
+	<img class="item" src="img/slider.jpg" />
+	<img class="item" src="img/slider.jpg" />
+	<img class="item" src="img/slider.jpg" />
+	<img class="item" src="img/slider.jpg" />
+</div>
+	</div>
+
 	<div class="page__shop">
 		<div class="shop">
 			<div class="shop__shop-header">

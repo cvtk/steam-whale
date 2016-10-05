@@ -1,0 +1,26 @@
+.slider-carousel {
+	overflow: hidden;
+	width: 9999px;
+	transition: .35s;
+	> .item {
+		position: relative;
+		float: left;
+	}
+	> .heading-box {
+		position: absolute;
+		padding: 35px;
+		width: 50%;
+		min-width: 330px;
+		z-index: 1;
+		> .title {}
+		> .text {}
+		> .link {
+			display: inline-block;
+			text-decoration: none;
+			transition: .35s ease-in-out;
+			color: $primary-color;
+			border-bottom: 1px solid #cfcfcf;
+			&:hover { color: $secondary-color; }
+		}
+	}
+}

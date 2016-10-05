@@ -1,5 +1,11 @@
 .mobile-menu {
 	position: relative;
-	padding: 16px 12px;
- 	overflow: hidden;
+  padding: 19px 12px;
+  > .cart-count {
+  	position: absolute;
+  	display: none;
+    left: 0;
+    top: -10px;
+    @media (max-width: $breakpoint-small) { display: block; }
+  }
 }

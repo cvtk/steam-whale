@@ -1,0 +1,28 @@
+.mobile-dropdown {
+	@extend .base-layout;
+	position: fixed;
+	z-index: 3;
+	background-color: rgba(255,255,255,.95);
+	border-top: 1px solid #eee;
+	padding-top: 0;
+	width: 100%;
+	transition: top 1s cubic-bezier(.61,.44,.17,1.2);
+	> .item {
+		display: block;
+		text-decoration: none;
+		width: 100%;
+		padding: 20px 12px;
+		font-size: 16px;
+		line-height: 1;
+		color: $primary-color;
+		transition: .35s ease-in-out;
+		border-bottom: 1px solid #eee;
+		cursor: pointer;
+		&:hover { color: #282828; }
+		&._cart {
+			display: none;
+			> .count { float: right; @include _clearfix; }
+			@media (max-width: $breakpoint-small) { display: block; }
+		}
+	}
+}

@@ -1,5 +1,5 @@
 .header-layout {
-	@include clearfix;
+	@include _clearfix;
 	@extend .base-layout;
 	
 	&._scrolled {
@@ -14,7 +14,9 @@
 	> .mobile-menu {
 		display: none;
 		float: left;
-		width: 20%;
+		width: 40%;
+		@media (max-width: $breakpoint-small) { float: right; width: auto;}
+		@media (max-width: $breakpoint-medium) { display:block; }
 	}
 
 	> .main-menu {
@@ -25,23 +27,13 @@
 	> .simple-logo {
 		float: left;
 		width: 20%;
+		@media (max-width: $breakpoint-small) { width: 45%; }
 	}
 
 	> .user-menu {
 		float: right;
-		width: 20%;
+		width: 40%;
+		text-align: right;
+		@media (max-width: $breakpoint-small) { display: none; }
 	}
-
-	@media (max-width: 768px) {
-  .mobile-menu {
-    display:block;
-  }
-}
-
-	@media (max-width: 400px) {
-  .mobile-menu {
-    display:block;
-    float: right;
-  }
-}
 }

@@ -11,5 +11,8 @@
 	  color: $primary-color;
 
 	  &:hover { color: $secondary-color; }
+	  &:first-child {
+			@media (max-width: $breakpoint-medium) {display: none;}
+		}
 	}
 }

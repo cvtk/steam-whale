@@ -23,14 +23,31 @@ $(function() {
 
 	app.minicartWidget.toggle = function() {
 		app.minicartWidget.toggleClass('_hidden');
+		return false;
 	}
 
 	app.minicartWidget.init = function() {
 		app.minicartWidget.triggers.each(function() {
-			$(this).click( app.minicartWidget.toggle )
+			$(this).click( app.minicartWidget.toggle );
 		})
 	}
 	app.minicartWidget.init();
+});
+$(function() {
+	app.mobileDropdown = $('#mobileDropdown'); 
+	app.mobileDropdown.triggers = $("[data-mobile-dropdown-trigger]");
+
+	app.mobileDropdown.toggle = function() {
+		app.mobileDropdown.toggleClass('_hidden');
+		return false;
+	}
+
+	app.mobileDropdown.init = function() {
+		app.mobileDropdown.triggers.each(function() {
+			$(this).click( app.mobileDropdown.toggle )
+		})
+	}
+	app.mobileDropdown.init();
 });
 app.cartWidget = {};
 app.cartWidget.update = function() {
@@ -74,3 +91,13 @@ $('#pageSlider').each(function(){
         },5000);
     })($(this));
 });
+$(function() {
+	app.sliderCarousel = $('#sliderCarousel');
+	app.sliderCarousel.interval = (app.sliderCarousel.data('interval')!==undefined)?app.sliderCarousel.data('interval'):1000;
+	
+	app.sliderCarousel.init = setInterval(function() {
+		
+	}, app.sliderCarousel.interval)
+
+	
+})

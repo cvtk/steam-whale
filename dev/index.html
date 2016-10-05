@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="a.css">
 </head>
-<body class="page">
+<body class="page-layout">
 	@@include('minicart-widget/component.html')
+	@@include('mobile-dropdown/component.html')
 	<header>
 		<div class="header-layout" id="headerLayout">
 			@@include('mobile-menu/component.html')
@@ -16,82 +17,10 @@
 		</div>
 	</header>
 
-	
-<!-- 	<div class="page__cart-widget" id="pageCartWidget">
-		<div class="cart-widget">
-			<div class="cart-widget__close-link">
-				<span class="cart-widget-close-link" id="cartWidgetCloseLink">Закрыть</span>
-			</div>
-			<div class="cart-widget__products-list">
-				<div class="products-list">
-					<div class="products-list__item">
-						<div class="products-list-item">
-							<img class="products-list-item__image" src="assets/img/product-1.jpg" />
-							<span class="products-list-item__remove"><span class="icon--close"></span></span>
-							<a class="products-list-item__header" href="#">Пропиленгликоль, 30мл</a>
-							<div class="products-list-item__qty">Количество<span class="icon--play-back"></span>1<span class="icon--play"></span></div>
-							<span class="products-list-item__price">270 <span class="icon--ruble"></span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="cart-widget__bottom-menu">
-				<div class="cart-widget-bottom-menu">
-					<div class="cart-widget__price-subtotal">
-						<div class="cart-widget-price-subtotal">
-							<span class="cart-widget-price-subtotal__title">Итог:</span>
-							<span class="cart-widget-price-subtotal__summary">10345<span class="icon--ruble"></span></span>
-						</div>
-					</div>
-					<div class="cart-widget__checkout">
-						<a class="cart-widget-checkout" href="#">Оформить заказ</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- <div class="page__header">
-		<div class="page-header">
-			<div class="page-header__mobile-menu">
-				@@include('mobile-menu/component.html')
-			</div>
-			<div class="page-header__nav-menu">
-				@@include('main-menu/component.html')
-			</div>
-			<div class="page-header__logo">
-				@@include('simple-logo/component.html')
-			</div>
-			<div class="page-header__user-menu">
-				@@include('user-menu/component.html')
-				<div class="page-header-user-menu">
-					<span class="page-header-user-menu__item page-header-user-menu__item--sign-in" href="#" id="userMenuLogin">Вход
-							<div class="page-header-user-menu__login-panel">
-								<div class="page-header-user-menu-login-panel">
-									<a class="page-header-user-menu-login-panel__item" href="#"></a>
-									<a class="page-header-user-menu-login-panel__item" href="#"></a>
-								</div>
-							</div>
-					</span>
-					<span class="page-header-user-menu__item page-header-user-menu__item--cart" id="userMenuCart" href="#">Корзина<span class="page-header-user-menu__cart-count">0</span></span>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<div class="page__slider">
-		<div class="page-slider" id="pageSlider">
-			<div class="page-slider__item">
-				<div class="page-slider-item page-slider-item--active">
-					<img class="page-slider-item__img" src="assets/img/slider-1.jpg" />
-					<div class="page-slider-item__slogan">
-						<div class="page-slider-item-slogan">
-							<h1 class="page-slider-item-slogan__header">Новый хит уходящего лета! Освежающий лайм с тонкими нотками ананаса</h1>
-							<a class="page-slider-item-slogan__link" href="#">dr. Grime 30ml</a>
-						</div>
-				</div>
-				</div>
-			</div>
-		</div>
+	<div class="slider-layout">
+		@@include('slider-carousel/component.html')
 	</div>
+
 	<div class="page__shop">
 		<div class="shop">
 			<div class="shop__shop-header">

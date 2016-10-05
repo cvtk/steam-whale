@@ -1,7 +1,13 @@
 $primary-color: #707070;
 $secondary-color: #dc9814;
 
-@mixin clearfix {
+$breakpoint-small: 544px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+$breakpoint-nolimit: 1280px;
+
+@mixin _clearfix {
   &:after {
     content: "";
     display: table;
@@ -12,6 +18,10 @@ $secondary-color: #dc9814;
 .base-layout {
 	padding: 15px;
   min-height: 1px;
+  @media (min-width: $breakpoint-medium) {width: 750px;}
+  @media (min-width: $breakpoint-large) {width: 970px;}
+  @media (min-width: $breakpoint-extra-large) {width: 1170px;}
+  @media (min-width: $breakpoint-nolimit) {width: 1280px;}
 }
 
 header {
@@ -22,8 +32,3 @@ header {
 	z-index: 3;
 	background-color: rgba(255, 255, 255, .9);
 }
-
-@media (min-width: 768px) { .base-layout { width: 750px; } }
-@media (min-width: 992px) { .base-layout { width: 970px; } }
-@media (min-width: 1200px) { .base-layout { width: 1170px; } }
-@media (min-width: 1280px) { .base-layout { width: 1280px; } }
