@@ -1,0 +1,18 @@
+.social-menu {
+	text-align: right;
+	padding: 6px 12px;
+	> .item {
+		text-decoration: none;
+		&._vk:after {content: $font-Flaticon-vk;}
+		&._facebook:after {content: $font-Flaticon-facebook;}
+		&._twitter:after {content: $font-Flaticon-twitter;}
+		&._mail:after {content: $font-Flaticon-mail;}
+		&:after { 
+			@include _icon;
+			transition: .35s ease-in-out;
+			color: #eee;
+			margin-left: 10px;
+		}
+		&:hover:after { color: #aaa; }
+	}
+}

@@ -18,6 +18,7 @@ $breakpoint-nolimit: 1280px;
 .base-layout {
 	padding: 15px;
   min-height: 1px;
+  margin: 0 auto;
   @media (min-width: $breakpoint-medium) {width: 750px;}
   @media (min-width: $breakpoint-large) {width: 970px;}
   @media (min-width: $breakpoint-extra-large) {width: 1170px;}
@@ -31,4 +32,10 @@ header {
 	width: 100%;
 	z-index: 3;
 	background-color: rgba(255, 255, 255, .9);
+}
+
+footer {
+  position: relative;
+  background-color: #282828;
+  width: 100%;
 }

@@ -1,0 +1,14 @@
+.footer-layout {
+	@extend .base-layout;
+	@include _clearfix;
+	> .footer-menu {
+		float: left;
+		width: 70%;
+		@media (max-width: $breakpoint-large) { width: 100%; text-align: center;}
+	}
+	> .social-menu {
+		float: right;
+		width: 30%;
+		@media (max-width: $breakpoint-large) { width: 100%; text-align: center;}
+	}
+}

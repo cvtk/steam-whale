@@ -1,0 +1,22 @@
+.footer-menu {
+	font-size: 16px;
+	> .item {
+		display: inline-block;
+		text-decoration: none;
+		padding: 16px 12px;
+		line-height: 1;
+		color: #aaa;
+		transition: .35s ease-in-out;
+		&:hover { color: #eee; }
+		&._copyright:hover { color: #aaa; }
+		@media (max-width: $breakpoint-medium) { 
+			width: 100%; 
+			text-align: left;
+			display: block;
+			border-bottom: 1px solid #3a3a3a;
+		}
+		&:last-child {
+			@media (max-width: $breakpoint-medium) { border: none };
+		}
+	}
+}
