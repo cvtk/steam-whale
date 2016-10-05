@@ -630,7 +630,7 @@ Creation date: 05/10/2016 09:25
     top: 0; }
   .minicart-widget > .products-listview {
     width: 100%;
-    height: 70vh; }
+    height: 65vh; }
   .minicart-widget > .close {
     display: block;
     color: #eee;
@@ -1967,14 +1967,14 @@ Creation date: 05/10/2016 09:25
           content: "\f104"; }
     .products-listview > .item > .qty {
       display: block;
-      width: 65%;
+      width: 55%;
       float: left;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
     .products-listview > .item > .price {
       display: block;
-      width: 35%;
+      width: 20%;
       color: #eee;
       float: right;
       text-align: right;
@@ -2073,7 +2073,7 @@ Creation date: 05/10/2016 09:25
 
 .slider-carousel {
   overflow: hidden;
-  width: 9999px;
+  width: 100%;
   transition: .35s; }
   .slider-carousel > .item {
     position: relative;
@@ -2097,9 +2097,6 @@ Creation date: 05/10/2016 09:25
   width: 100%;
   min-height: 600px;
   margin: 0 auto; }
-  @media (min-width: 1600px) {
-    .slider-layout {
-      width: 1600px; } }
 
 .user-menu {
   position: relative; }
