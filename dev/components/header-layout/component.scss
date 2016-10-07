@@ -13,26 +13,30 @@
 	> .mobile-menu {
 		display: none;
 		float: left;
-		width: 40%;
-		@media (max-width: $breakpoint-small) { float: right; width: auto;}
+		width: 20%;
 		@media (max-width: $breakpoint-medium) { display:block; }
+		@media (max-width: $breakpoint-small) { float: right; width: auto;}
+		
 	}
 
 	> .main-menu {
 		float: left;
-		width: 40%;	
+		width: 35%;	
 	}
 
 	> .simple-logo {
 		float: left;
-		width: 20%;
-		@media (max-width: $breakpoint-small) { width: 45%; }
+		width: 30%;
+		text-align: center;
+		@media (max-width: $breakpoint-medium) { width: 60% }
+		@media (max-width: $breakpoint-small) { width: 66.666667%; }
 	}
 
 	> .user-menu {
 		float: right;
-		width: 40%;
+		width: 35%;
 		text-align: right;
+		@media (max-width: $breakpoint-medium) { width: 20%; }
 		@media (max-width: $breakpoint-small) { display: none; }
 	}
 }

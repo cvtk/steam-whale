@@ -1,0 +1,7 @@
+.main-layout {
+	@extend .base-layout;
+	> .category-navigation {
+		@include _clearfix;
+		float: left;
+	}
+}

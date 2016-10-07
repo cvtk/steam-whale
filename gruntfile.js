@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     expand: true,
                     src: [
                     'dev/fonts/**/*.{eot,svg,ttf,woff}',
-                    'dev/componens/**/*.{eot,svg,ttf,woff}'
+                    'dev/components/**/*.{eot,svg,ttf,woff}'
                     ],
                     dest:"prod/fonts/",
                     flatten: true

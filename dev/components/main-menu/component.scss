@@ -5,7 +5,7 @@
 		text-decoration: none;
 		padding: 16px 12px;
 		color: $primary-color;
-		transition: .35s ease-in-out;
+		transition: .25s ease;
 		&:hover { color: #282828; }
 	}
 
@@ -13,13 +13,13 @@
 		content: "";
 		position: absolute;
 		width: 0;
-		height: 1px;
-		left: 10%;
-		bottom: 15%;
-		background-color: #cfcfcf;
-		transition: .5s ease-in-out;
+		height: 2px;
+		left: 45%;
+		bottom: 12%;
+		background-color: $secondary-color;
+		transition: .35s ease-in-out;
 	}
 
-	>	.item:hover:after { width: 77%; }
+	>	.item:hover:after { width: 77%; left: 10px;}
 	@media (max-width: $breakpoint-medium) {display: none;}
 }

@@ -1,9 +1,13 @@
 .simple-logo {
 	> .link {
-			display: block;
-			background-repeat: no-repeat;
-    	background-size: 100% auto;
-    	background-position: center center;
+			font-family: 'bonapart-modern', sans-serif;
+			font-size: 46px;
 			padding: 28px 0;
+			color: #282828;
+			text-decoration: none;
+			@media (max-width: $breakpoint-large) { font-size: 32px; }
+			@media (max-width: $breakpoint-small) { font-size: 34px; }
+			
+
 	}
 }

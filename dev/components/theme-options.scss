@@ -8,7 +8,7 @@ $breakpoint-extra-large: 1200px;
 $breakpoint-nolimit: 1280px;
 
 @mixin _clearfix {
-  &:after {
+  &:before, &:after {
     content: "";
     display: table;
     clear: both;

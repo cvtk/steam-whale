@@ -1,0 +1,86 @@
+.product-item {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 0 12px 24px 12px;
+	font-size: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	@media (max-width: $breakpoint-large) { width: 50%; }
+	&:hover {
+		> .title { color: #282828;}
+		> .thumb-box > .image._hover { opacity: 1; }
+		> .addtocart { left: 12px; }
+		> .price { left: -100%; }
+	}
+	> .thumb-box {
+		position: relative;
+		> .image {
+			position: relative;
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+			transition: opacity .45s ease-in-out;
+				&._hover {
+				position: absolute; 
+				top: 0; 
+				left: 0;
+				opacity: 0
+			}
+		}
+	}
+	> .title {
+		float: left;
+		width: 90%;
+		font-weight: 300;
+		font-size: 1em;
+		color: $primary-color;
+		margin: 0;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		transition: .35s ease-in-out;
+	}
+	> .like {
+		float: right;
+		width: 10%;
+		text-align: right;
+		cursor: pointer;
+		color: $primary-color; 
+		&:hover:after { 
+			color: $secondary-color; 
+		}
+		&:after {
+			@include _icon;
+			content: $font-Flaticon-wish;
+			font-size: 14px;
+			transition: .35s ease;
+		}
+	}
+	> .price {
+		position: relative;
+		color: #282828;
+		transition: .35s ease-in-out;
+		left: 0;
+		&:after {
+			@include _icon;
+			content: $font-Flaticon-ruble;
+			font-size: 14px;
+		}
+	}
+	> .addtocart {
+		position: absolute;
+		left: -100%;
+		border: 0;
+		padding: 0;
+		background-color: transparent;
+		outline: 0;
+		border-bottom: 1px solid #cfcfcf;
+		cursor: pointer;
+		transition: .35s ease-in-out;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
