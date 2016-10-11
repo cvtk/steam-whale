@@ -1,0 +1,10 @@
+.single-layout {
+	width: 100%;
+	background-color: #eee;
+	> .single-navigation {
+		@extend .base-layout;
+	}
+	> .products-singleview {
+		@extend .base-layout;
+	}
+}

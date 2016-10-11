@@ -3,6 +3,7 @@
 	padding: 6px 12px;
 	> .item {
 		text-decoration: none;
+		&._wish:after {content: $font-Flaticon-wish;}
 		&._vk:after {content: $font-Flaticon-vk;}
 		&._facebook:after {content: $font-Flaticon-facebook;}
 		&._twitter:after {content: $font-Flaticon-twitter;}

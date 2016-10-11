@@ -1,0 +1,17 @@
+.breadcrumbs-navigation {
+	padding: 6px 12px;
+	> .item {
+		color: $primary-color;
+		font-size: 16px;
+		transition: .35s ease;
+		text-decoration: none;
+		&:hover { color: $secondary-color; }
+		&:after {
+			content: "/";
+			padding: 0 5px 0 10px;
+			color: #aaa;
+		}
+		&:last-child:after { content: ""; }
+		&._active { color: $secondary-color; }
+	}
+}

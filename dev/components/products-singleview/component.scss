@@ -1,0 +1,71 @@
+.products-singleview {
+	@include _clearfix;
+	> .image {
+		width: 67.66666666%;
+		float: left;
+	}
+	> .product-meta {
+		width: 33.33333333%;
+		float: right;
+		padding: 0 12px;
+		> .title {
+			font-size: 26px;
+			font-weight: 400;
+			color: #282828;
+			line-height: 1.2;
+			margin: 0;
+		}
+		> .price {
+			display: block;
+			color: $secondary-color;
+			font-size: 22px;
+			font-weight: 300;
+			line-height: 1;
+			vertical-align: top;
+			padding: 12px 0 22px;
+			&:after {
+				@include _icon;
+				content: $font-Flaticon-ruble;
+				font-size: 18px;
+			}
+		}
+		> .description {
+			margin: 0;
+			line-height: 1.8;
+			padding-bottom: 22px;
+		}
+		> .add {
+			display: inline-block;
+			color: #fff;
+			background-color: #282828;
+			padding: 14px;
+			line-height: 16px;
+			width: 75%;
+			font-size: 16px;
+			border: 0;
+			transition: .35s ease;
+			cursor: pointer;
+			&:hover { background-color: #444; }
+		}
+		> .quantity {
+			display: inline-block;
+			color: #fff;
+			background-color: #282828;
+			padding: 14px;
+			line-height: 16px;
+			width: 25%;
+			text-align: center;
+			font-size: 15px;
+			border: 0;
+			border-left: 1px solid #dadada;
+			outline: 0;
+		}
+	}
+}
+
+.social-menu._product {
+		padding-left: 0;
+		> .item:first-child:after { margin-left:0 } 
+		> .item:after { color: $primary-color; }
+		> .item:hover:after { color: #282828; }
+	}

@@ -1,0 +1,14 @@
+.next-navigation {
+	padding: 6px 12px;
+	> .link {
+		color: #a1a1a1;
+		
+		text-decoration: none;
+		&:after {
+			@include _icon;
+			content: $font-Flaticon-back;
+		}
+		&._next:after { content: $font-Flaticon-next; }
+		&:hover { color: $secondary-color; }
+	}
+}
