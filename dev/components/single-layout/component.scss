@@ -7,4 +7,9 @@
 	> .products-singleview {
 		@extend .base-layout;
 	}
+	> .related-products {
+		@extend .base-layout;
+		padding-top: 20px;
+		padding-bottom: 48px;
+	}
 }

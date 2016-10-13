@@ -12,17 +12,17 @@
 	<div class="minicart-widget _hidden" id="minicartWidget">
 		<span class="close" data-minicart-trigger>Закрыть</span>
 		<div class="products-listview">
-	<div class="item">
+	<div class="listview-item">
 		<img class="thumb" src="img/product-1.jpg" />
 		<a class="title" href="#">Product Title Steam Product lequid</a>
 		<span class="remove" title="Удалить товар"></span>
 		<span class="qty">Количество: 5</span>
 		<span class="price">550</span>
 	</div>
-	<div class="item">
+	<div class="listview-item">
 		<img class="thumb" src="img/product-1.jpg" />
 		<a class="title" href="#">Steam Product lequid</a>
-		<span class="remove"></span>
+		<button class="remove" type="submit" name="ms2_action" value="cart/remove" id="listviewItemRemove" title="Удалить товар"></button>
 		<span class="qty">Количество: 3</span>
 		<span class="price">12250</span>
 	</div>
@@ -39,7 +39,6 @@
 	<a class="item">Магазин</a>
 	<a class="item">О нас</a>
 	<a class="item">Вход</a>
-
 </div>
 	<header>
 		<div class="header-layout" id="headerLayout">
@@ -52,8 +51,7 @@
 </span>
 </div>
 			<nav class="main-menu">
-	<a class="item" href="#">Главная</a>
-	<a class="item" href="#">Магазин</a>
+	<a class="item _active" href="#">Магазин</a>
 	<a class="item" href="#">О нас</a>
 </nav>
 			<div class="simple-logo">
@@ -70,7 +68,11 @@
 
 	<div class="slider-layout">
 		<div class="slider-carousel" id="sliderCarousel" data-interval="1500">
-
+	<div class="item" style="background-image: url('img/slide-1.png'); ">
+		<h2 class="title">Линейка новых вкусов от Steam Whale</h2>
+		<p class="text">Освежающий лемон, теплая молочая клубника, свежающий лемон, теплая молочая клубника, вежающий лемон, теплая молочая клубника,свежающий лемон, теплая молочая клубника,</p>
+		<a class="link" href="#">Подробнее...</a>
+	</div>
 </div>
 	</div>
 	<main>
@@ -190,18 +192,104 @@
 
 
 			<div class="products-singleview">
-	<img class="image" />
+	<img class="image" src="img/slider-alt.jpg" />
 	<form class="product-meta" method="post">
 		<h1 class="title">Steam Whale Deep Blue</h1>
 		<span class="price">550</span>
 		<p class="description">Банан в миксе с кондитерским кремом и карамелью. Жидкость подойдет любителям сладенького, нотки сладкой карамели не оставят Вас равнодушным. Потрясающий вкус, который идеально подойдет на каждый день.</p>
 		<button class="add" type="submit">Добавить в корзину</button><input type="number" step="1" min="1" max="999" name="count" value="1" class="quantity">
 		<nav class="social-menu _product">
+			<a class="item _wish" target="_blank" href="#"></a>
 			<a class="item _vk" target="_blank" href="#"></a>
 			<a class="item _facebook" target="_blank" href="#"></a>
 			<a class="item _twitter" target="_blank" href="#"></a>
 		</nav>
 	</form>
+</div>
+			<div class="related-products">
+	<h2 class="title">Вам может пригодиться</h2>
+	<div class="products-rowview">
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+		<a class="product-item" href="#">
+	<div class="thumb-box">
+		<img class="image" src="img/product-main.jpg" />
+		<img class="image _hover" src="img/product-hover.jpg"  />
+	</div>
+	<h3 class="title">Steam Whale Lequid</h3>
+	<span class="like"></span>
+	<span class="price">450</span>
+	<button class="addtocart" href="#">Добавить в корзину</button>
+</a>
+	</div>
 </div>
 		</div>
 	</main>

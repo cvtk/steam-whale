@@ -3,11 +3,13 @@
 	> .breadcrumbs-navigation {
 		float: left;
 		width: 80%;
+		@media (max-width: $breakpoint-medium) { display: none; }
 	}
 	> .next-navigation {
 		float: right;
 		width: 20%;
 		text-align: right;
+		@media (max-width: $breakpoint-medium) { width: 100%; }
 	}
 
 }

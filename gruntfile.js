@@ -8,6 +8,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     src: [
+                    'dev/libs/fonts/*.{eot,svg,ttf,woff}',
                     'dev/fonts/**/*.{eot,svg,ttf,woff}',
                     'dev/components/**/*.{eot,svg,ttf,woff}'
                     ],
@@ -114,7 +115,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'dev/img/',
-                    src: ['**/*.{png,jpg,gif}'],
+                    src: [
+                    '**/*.{png,jpg,gif}'],
                     dest: 'prod/img/'
                 }]
             }

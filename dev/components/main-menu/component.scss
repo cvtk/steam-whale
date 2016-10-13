@@ -20,6 +20,6 @@
 		transition: .35s ease-in-out;
 	}
 
-	>	.item:hover:after { width: 77%; left: 10px;}
+	>	.item:hover:after, .item._active:after  { width: 77%; left: 10px;}
 	@media (max-width: $breakpoint-medium) {display: none;}
 }

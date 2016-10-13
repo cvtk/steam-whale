@@ -1,0 +1,24 @@
+.slider-carousel {
+	position: relative;
+		width: 100%;
+		height: 100%;
+	>	.item {
+		width: 100%;
+		height: 750px;
+		padding: 10% 50% 10% 15%;
+		background-color: #eee;
+		background-position: 95%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		> .title {
+	    font-size: 38px;
+	    font-weight: 600;
+	    color: #282828;
+	    line-height: 1.4;
+	    text-transform: uppercase;
+	    margin: 0;
+		}
+		> .text { color: #282828; }
+		> .link { color: $secondary-color; text-decoration: none; }
+	}
+}

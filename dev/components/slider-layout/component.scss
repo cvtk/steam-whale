@@ -1,5 +1,4 @@
 .slider-layout {
 	width: 100%;
-	min-height: 600px;
-	margin: 0 auto;
+	> .slider-carousel { max-width: 1600px; min-height: 750px; margin: 0 auto;}
 }

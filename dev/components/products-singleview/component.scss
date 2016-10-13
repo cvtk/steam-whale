@@ -1,13 +1,19 @@
 .products-singleview {
 	@include _clearfix;
 	> .image {
-		width: 67.66666666%;
+		width: 66.666667%;
 		float: left;
+		padding: 0 12px;
+		@media (max-width: $breakpoint-large) { width: 100%; }
 	}
 	> .product-meta {
 		width: 33.33333333%;
 		float: right;
 		padding: 0 12px;
+		@media (max-width: $breakpoint-large) { 
+			width: 100%;
+			margin-top: 20px;
+		}
 		> .title {
 			font-size: 26px;
 			font-weight: 400;
@@ -46,6 +52,8 @@
 			transition: .35s ease;
 			cursor: pointer;
 			&:hover { background-color: #444; }
+			@media (max-width: $breakpoint-large) { width: 30%; }
+			@media (max-width: $breakpoint-medium) { width: 75%; }
 		}
 		> .quantity {
 			display: inline-block;
@@ -59,13 +67,18 @@
 			border: 0;
 			border-left: 1px solid #dadada;
 			outline: 0;
+			@media (max-width: $breakpoint-large) { width: 10%; }
+			@media (max-width: $breakpoint-medium) { width: 25%; }
 		}
 	}
 }
 
 .social-menu._product {
-		padding-left: 0;
-		> .item:first-child:after { margin-left:0 } 
+	display: block;
+	text-align: left;
+	padding: 18px 0;
+		> .item:first-child:after { margin-left:0; margin-right:12px; }
+		> .item:first-child:hover:after { color: $secondary-color; } 
 		> .item:after { color: $primary-color; }
 		> .item:hover:after { color: #282828; }
 	}
