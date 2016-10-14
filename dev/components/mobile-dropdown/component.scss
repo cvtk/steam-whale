@@ -21,7 +21,11 @@
 		&:hover { color: #282828; }
 		&._cart {
 			display: none;
-			> .count { float: right; @include _clearfix; }
+			> .count { 
+				float: right; 
+				@include _clearfix; 
+				> .cart-count { position: static; }
+			}
 			@media (max-width: $breakpoint-small) { display: block; }
 		}
 	}

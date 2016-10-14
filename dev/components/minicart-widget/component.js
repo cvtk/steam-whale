@@ -9,7 +9,13 @@ $(function() {
 
 	app.minicartWidget.init = function() {
 		app.minicartWidget.triggers.each(function() {
-			$(this).click( app.minicartWidget.toggle );
+			$(this).unbind('click').click( app.minicartWidget.toggle );
+		})
+		var removeTriggers = $("#minicartWidget [data-listview-remove-trigger]");
+		removeTriggers.each(function() {
+			$(this).click(function() {
+				$(this).parent().fadeOut();
+			})
 		})
 	}
 	app.minicartWidget.init();

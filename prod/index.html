@@ -22,7 +22,7 @@
 	<div class="listview-item">
 		<img class="thumb" src="img/product-1.jpg" />
 		<a class="title" href="#">Steam Product lequid</a>
-		<button class="remove" type="submit" name="ms2_action" value="cart/remove" id="listviewItemRemove" title="Удалить товар"></button>
+		<button class="remove" type="submit" name="ms2_action" value="cart/remove" data-listview-remove-trigger title="Удалить товар"></button>
 		<span class="qty">Количество: 3</span>
 		<span class="price">12250</span>
 	</div>
@@ -42,9 +42,9 @@
 </div>
 	<header>
 		<div class="header-layout" id="headerLayout">
-			<div class="mobile-menu" data-mobile-dropdown-trigger>
+			<div class="mobile-menu">
 	<span class="cart-count" id="cartCount">2</span>
-	<span class="humburger-icon" id="hamburgerIcon">
+	<span class="humburger-icon" id="hamburgerIcon"  data-mobile-dropdown-trigger>
 	<span class="line"></span>
 	<span class="line"></span>
 	<span class="line"></span>
@@ -291,6 +291,31 @@
 </a>
 	</div>
 </div>
+		</div>
+		<div class="signin-layout" id="signinLayout">
+			<form class="signin-form">
+	<h2 class="title">Войти</h2>
+	<label class="label" for="signinFormEmail">Адрес эл. почты</label>
+	<input type="email" class="input" name="email" id="signinFormEmail" value="">
+	<label class="label" for="signinFormPassword">Пароль</label>
+	<input type="password" class="input" name="email" id="signinFormPassword" value="">
+	<input name="rememberme" type="checkbox" id="rememberMe" class="_rememberme" value="forever">
+	<label class="remember" for="rememberMe">Запомнить меня</label>
+	<a class="lostpassword" href="#">Забыли пароль?</a>
+	<input type="submit" class="button" name="login" value="Вход">
+	<span class="or">или</span>
+	<span class="register" data-form-toggle>Регистрация</span>
+</form>
+			<form class="register-form">
+	<h2 class="title">Регистрация</h2>
+	<label class="label" for="signinFormEmail">Адрес эл. почты</label>
+	<input type="email" class="input" name="email" id="signinFormEmail" value="">
+	<label class="label" for="signinFormPassword">Пароль</label>
+	<input type="password" class="input" name="email" id="signinFormPassword" value="">
+	<input type="submit" class="button" name="login" value="Регистрация">
+	<span class="or">или</span>
+	<span class="signin" data-form-toggle>Вход</span>
+</form>
 		</div>
 	</main>
 	<footer>

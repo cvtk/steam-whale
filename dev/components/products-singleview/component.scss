@@ -3,8 +3,9 @@
 	> .image {
 		width: 66.666667%;
 		float: left;
-		padding: 0 12px;
-		@media (max-width: $breakpoint-large) { width: 100%; }
+		padding-right: 42px;
+    padding-left: 12px;
+		@media (max-width: $breakpoint-large) { width: 100%; padding-right: 12px;}
 	}
 	> .product-meta {
 		width: 33.33333333%;
@@ -38,7 +39,7 @@
 		> .description {
 			margin: 0;
 			line-height: 1.8;
-			padding-bottom: 22px;
+			padding-bottom: 42px;
 		}
 		> .add {
 			display: inline-block;

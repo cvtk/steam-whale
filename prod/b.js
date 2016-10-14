@@ -1,1 +1,1 @@
-$(function(){miniShop2.Callbacks.Cart.add.response.success=function(a){$.post("/",{action:"reloadCart"},function(a){app.minicartWidget.replaceWith(a).init()})}});
+$(function(){miniShop2.Callbacks.Cart.add.response.success=function(a){$.post("/",{action:"reloadCart"},function(a){$("#productsListview").html(a),app.minicartWidget.init()})},miniShop2.Cart.totalCount=".cart-count",miniShop2.Cart.totalCost=".summary-price > .price"});
