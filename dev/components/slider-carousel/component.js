@@ -1,16 +1,11 @@
 $(function() {
-	app.sliderCarousel = $('#sliderCarousel');
-	app.sliderCarousel.interval = (app.sliderCarousel.data('interval')!==undefined)?app.sliderCarousel.data('interval'):1000;
+	
+	$('[data-slider-trigger]').click(function() {
+		var $self = $(this),
+			  target = $self.attr('data-slider-trigger');
 
-	// if( jQuery().slick ) {
-	// 	$('#sliderCarousel').slick({
-	// 		dots: true,
-	// 	  infinite: true,
-	// 	  speed: 300,
-	// 	  adaptiveHeight: true,
-	// 	  // autoplaySpeed: 3500,
-	// 	  // autoplay: true,
-	// 	  // pauseOnHover: true
-	// 	});
- // 	}
+		$self.siblings().removeClass('_active');
+		$self.addClass('_active');
+		$('#sliderFrame').animate({top: target * -100 + 100 + '%'}, 550);
+	})
 })
