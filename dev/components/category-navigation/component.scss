@@ -3,7 +3,7 @@
 	> .item {
 		color: $primary-color;
 		transition: .35s ease;
-    cursor: pointer;
+    text-decoration: none;
 		&._active, &:hover { color: $secondary-color; }
 		&:after { 
 			content: "/";

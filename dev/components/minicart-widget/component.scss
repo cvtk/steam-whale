@@ -49,6 +49,7 @@
 		line-height: 1;
 		border-top: 1px solid #464646;
 		border-bottom: 1px solid #464646;
+		&._disabled { opacity: 0; }
 		> .title {
 			float: left;
 		}
@@ -73,5 +74,6 @@
 		line-height: 1;
 		transition: .35s ease-in-out;
 		&:hover {background-color: #3e3e3e;}
+		&._disabled { opacity: 0; }
 	}
 }
