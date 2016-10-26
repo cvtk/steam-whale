@@ -1,0 +1,18 @@
+.page-layout {
+	position: relative;
+	color: #777777;
+	font-family: "Roboto",sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 2;
+	min-width: 330px;
+	padding-top: 87px;
+
+	> .mobile-dropdown {
+		top: 68px;
+		left: 0;
+		width: 100%;
+		&._hidden { top: -100%; }
+	}
+}
