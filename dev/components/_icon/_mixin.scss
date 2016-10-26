@@ -1,4 +1,5 @@
-@font-face {
+
+ @font-face {
   font-family: "Flaticon";
   src: url("./fonts/Flaticon.eot");
   src: url("./fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
@@ -31,18 +32,15 @@
     font-smoothing: antialiased;
   }
     
-  $font-Flaticon-back: "\f100";
-  $font-Flaticon-checked: "\f101";
-  $font-Flaticon-close: "\f102";
-  $font-Flaticon-eye: "\f103";
-  $font-Flaticon-facebook: "\f104";
-  $font-Flaticon-mail: "\f105";
-  $font-Flaticon-bottle: "\f106";
-  $font-Flaticon-next: "\f107";
-  $font-Flaticon-odnoklassniki-logo: "\f108";
-  $font-Flaticon-drop: "\f109";
-  $font-Flaticon-ruble: "\f10a";
-  $font-Flaticon-search: "\f10b";
-  $font-Flaticon-like: "\f10c";
-  $font-Flaticon-twitter: "\f10d";
-  $font-Flaticon-vk: "\f10e";
+$font-Flaticon-back: "\f100";
+$font-Flaticon-checked: "\f101";
+$font-Flaticon-close: "\f102";
+$font-Flaticon-facebook: "\f103";
+$font-Flaticon-mail: "\f104";
+$font-Flaticon-next: "\f105";
+$font-Flaticon-odnoklassniki-logo: "\f106";
+$font-Flaticon-ruble: "\f107";
+$font-Flaticon-search: "\f108";
+$font-Flaticon-twitter: "\f109";
+$font-Flaticon-vk: "\f10a";
+$font-Flaticon-wish: "\f10b";

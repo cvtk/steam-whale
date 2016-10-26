@@ -3,30 +3,8 @@
 	padding: 6px 12px;
 	> .item {
 		text-decoration: none;
-		&._like { 
-			text-decoration: none; 
-			font-size: 14px; 
-			font-weight: 600;
-			color: $primary-color;
-			transition: .35s ease;
-			&:before {
-				@include _icon;
-				content: $font-Flaticon-like; 
-				font-size: 16px; 
-				padding-right: 6px; }
-				&:hover { color: $secondary-color; }
-			&:after {
-				content: "|";
-				padding-left: 6px;
-				padding-right: 6px;
-				font-size: 18px;
-				color: #aaa;
-				&:hover { color: #aaa; }
-			}
-		}
-		
+		&._wish:after {content: $font-Flaticon-wish;}
 		&._vk:after {content: $font-Flaticon-vk;}
-		&._ok:after {content: $font-Flaticon-odnoklassniki-logo;}
 		&._facebook:after {content: $font-Flaticon-facebook;}
 		&._twitter:after {content: $font-Flaticon-twitter;}
 		&._mail:after {content: $font-Flaticon-mail;}
