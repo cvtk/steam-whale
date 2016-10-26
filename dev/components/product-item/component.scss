@@ -9,29 +9,29 @@
 	@media (max-width: $breakpoint-large) { width: 50%; }
 	&:hover {
 		> .title { color: #282828;}
-		> .thumb-box > .image._hover { opacity: 1; }
 		> .addtocart { left: 12px; }
 		> .price { left: -100%; }
 	}
 	> .thumb-box {
 		position: relative;
+		> .vendor {
+			position: absolute;
+			width: 15%;
+			height: 15%;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
 		> .image {
 			position: relative;
 			width: 100%;
 			height: auto;
 			max-width: 100%;
-			transition: opacity .45s ease-in-out;
-				&._hover {
-				position: absolute; 
-				top: 0; 
-				left: 0;
-				opacity: 0
-			}
 		}
 	}
 	> .title {
 		float: left;
-		width: 90%;
+		width: 85%;
 		font-weight: 300;
 		font-size: 1em;
 		color: $primary-color;
@@ -43,18 +43,22 @@
 	}
 	> .like {
 		float: right;
-		width: 10%;
+		width: 15%;
 		text-align: right;
 		cursor: pointer;
+		font-size: 14px;
+		line-height: 32px;
+		font-weight: 600;
 		color: $primary-color; 
-		&:hover:after { 
+		transition: .35s ease;
+		&:hover { 
 			color: $secondary-color; 
 		}
-		&:after {
+		&:before {
 			@include _icon;
-			content: $font-Flaticon-wish;
-			font-size: 14px;
-			transition: .35s ease;
+			content: $font-Flaticon-like;
+			font-size: 16px; 
+			padding-right: 6px;
 		}
 	}
 	> .price {

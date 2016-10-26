@@ -1,3 +1,18 @@
 .products-rowview {
 	@include _clearfix;
+	> .loadmore {
+		display: block;
+    width: 100%;
+    min-height: 42px;
+    margin: 17px 0 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: .35s ease;
+    &:hover {color: #282828;}
+    &:before {
+    	content: " ";
+    	display: table;
+    	clear: both;
+    }
+	}
 }
