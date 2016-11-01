@@ -22,6 +22,7 @@ module.exports = function(grunt) {
             jsa: {
                 src: [
                     'dev/libs/*.js',
+                    'dev/inline/**/*.js',
                     'dev/init.js',
                     'dev/components/*.js',
                     'dev/components/**/*.js'
@@ -44,11 +45,19 @@ module.exports = function(grunt) {
                 ],
                 dest: 'dev/tmp/build.scss',
             },
+            css_inline: {
+                src: [
+                		'dev/components/theme-options.scss',
+                    'dev/inline/**/*.{scss,css}'
+                ],
+                dest: 'dev/tmp/inline.scss',
+            },
         },
 
         sass: {
             dist: {
                 files: {
+                		'dev/tmp/inline.css': 'dev/tmp/inline.scss',
                     'prod/a.css': 'dev/tmp/build.scss',
                 }
             }
@@ -58,10 +67,16 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']
             },
+            inline: {
+                src: 'dev/tmp/inline.css',
+                dest: 'dev/tmp/inline.css'
+            },
+
             main: {
                 src: 'prod/a.css',
                 dest: 'prod/a.css'
             }
+
         },
 
         uglify: {
@@ -76,14 +91,6 @@ module.exports = function(grunt) {
             }
         },
 
-        uncss: {
-            dist: {
-                files: {
-                    'prod/a.css': ['index.html', 'product-single.html']
-                }
-            }
-        },
-
         cssmin: {
             options: {
                 restructuring: false,
@@ -93,6 +100,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
+                		'dev/tmp/inline.css': ['dev/tmp/inline.css'],
                     'prod/a.css': ['prod/a.css']
                 }
             }

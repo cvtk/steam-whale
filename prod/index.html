@@ -3,7 +3,180 @@
 <head>
 	<title>Steam Whale</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="a.css">
+	<style type="text/css">
+		.base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+  padding: 15px;
+  min-height: 1px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+      width: 1170px; } }
+  @media (min-width: 1280px) {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+      width: 1280px; } }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+footer {
+  position: relative;
+  background-color: #282828;
+  width: 100%; }
+
+.about-layout {
+  width: 100%; }
+  .about-layout > .header {
+    padding-left: 10%;
+    color: #282828;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400; }
+  .about-layout > .about-information:before, .about-layout > .about-information:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .about-layout > .about-information:last-child {
+    margin-bottom: 38px; }
+
+.footer-layout:before, .footer-layout:after {
+  content: "";
+  display: table;
+  clear: both; }
+.footer-layout > .footer-menu {
+  float: left;
+  width: 70%; }
+  @media (max-width: 992px) {
+    .footer-layout > .footer-menu {
+      width: 100%;
+      text-align: center; } }
+.footer-layout > .social-menu {
+  float: right;
+  width: 30%; }
+  @media (max-width: 992px) {
+    .footer-layout > .social-menu {
+      width: 100%;
+      text-align: center; } }
+
+.header-layout {
+  line-height: 50px;
+  -webkit-transition: .35s ease-in-out;
+          transition: .35s ease-in-out; }
+  .header-layout:before, .header-layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .header-layout._scrolled {
+    padding-bottom: 8px;
+    padding-top: 8px; }
+  .header-layout > .mobile-menu {
+    display: none;
+    float: left;
+    width: 20%; }
+    @media (max-width: 768px) {
+      .header-layout > .mobile-menu {
+        display: block; } }
+    @media (max-width: 544px) {
+      .header-layout > .mobile-menu {
+        float: right;
+        width: auto; } }
+  .header-layout > .main-menu {
+    float: left;
+    width: 35%; }
+  .header-layout > .simple-logo {
+    float: left;
+    width: 30%;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .header-layout > .simple-logo {
+        width: 60%; } }
+    @media (max-width: 544px) {
+      .header-layout > .simple-logo {
+        width: 66.666667%; } }
+  .header-layout > .user-menu {
+    float: right;
+    width: 35%;
+    text-align: right; }
+    @media (max-width: 768px) {
+      .header-layout > .user-menu {
+        width: 20%; } }
+    @media (max-width: 544px) {
+      .header-layout > .user-menu {
+        display: none; } }
+
+.main-layout > .category-navigation {
+  float: left; }
+  .main-layout > .category-navigation:before, .main-layout > .category-navigation:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.page-layout {
+  position: relative;
+  color: #777777;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  min-width: 330px;
+  padding-top: 87px; }
+  .page-layout > .mobile-dropdown {
+    top: 68px;
+    left: 0;
+    width: 100%; }
+    .page-layout > .mobile-dropdown._hidden {
+      top: -100%; }
+
+.signin-layout {
+  background-color: #f5f5f5;
+  min-height: 575px;
+  overflow: hidden; }
+  .signin-layout:before, .signin-layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .signin-layout > .signin-form {
+    position: relative;
+    width: 100%;
+    min-width: 330px;
+    max-width: 502px;
+    padding: 65px 27px;
+    margin: 0 auto; }
+  .signin-layout > .register-form {
+    display: none;
+    position: relative;
+    width: 100%;
+    min-width: 330px;
+    max-width: 502px;
+    padding: 65px 27px;
+    margin: 0 auto; }
+
+.single-layout {
+  width: 100%;
+  background-color: #eee; }
+  .single-layout > .related-products {
+    padding-top: 20px;
+    padding-bottom: 48px; }
+
+.slider-layout {
+  width: 100%; }
+  .slider-layout > .slider-carousel {
+    max-width: 1600px;
+    min-height: 550px;
+    margin: 0 auto; }
+
+	</style>
 	<!--[if lt IE 9]>
   	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<![endif]-->
@@ -122,94 +295,130 @@
 	<a class="item">Все для намотки</a>
 </nav>
 			<div class="products-rowview">
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-	<a class="product-item" href="#">
+	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
 	<a class="loadmore" href="#">Загрузить еще</a>
@@ -236,7 +445,10 @@
 		<h1 class="title">Steam Whale Deep Blue</h1>
 		<span class="price">550</span>
 		<p class="description">Банан в миксе с кондитерским кремом и карамелью. Жидкость подойдет любителям сладенького, нотки сладкой карамели не оставят Вас равнодушным. Потрясающий вкус, который идеально подойдет на каждый день.</p>
+		<span class="option _volume" title="Объем">10мл</span>
+		<span class="option _rec_mono" title="На мл">5 мг</span>
 		<p class="vendor">Производитель: <span class="_ink">Steam Whale, Россия</span></p>
+		<span class="outofstock">Ожидается поступление</span>
 		<button class="add" type="submit">Добавить в корзину</button><input type="number" step="1" min="1" max="999" name="count" value="1" class="quantity">
 		<nav class="social-menu _product">
 			<a class="item _like" target="_blank" href="#">46</a>
@@ -250,84 +462,116 @@
 			<div class="related-products">
 	<h2 class="title">Вам может пригодиться</h2>
 	<div class="products-rowview">
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
-		<a class="product-item" href="#">
+		<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
-		<img class="vendor" src="" />
-		<img class="image" src="img/product-main.jpg" />
+		<div class="meta-icons">
+			<img class="item" src="img/tpa-logo.png" />
+			<img class="item" src="img/popular.png" />
+		</div>
+		<img class="image" src="img/example.jpg" />
 	</div>
 	<h3 class="title">Steam Whale Lequid</h3>
 	<span class="like">46</span>
 	<span class="price">450</span>
+	<span class="outofstock">Ожидаем поставки</span>
 	<button class="addtocart" href="#">Добавить в корзину</button>
 </a>
 	</div>
@@ -358,6 +602,27 @@
 	<span class="signin" data-form-toggle>Вход</span>
 </form>
 		</div>
+		<div class="about-layout">
+			<h1 class="header">О нашей компании</h1>
+			<div class="banner-image">
+	<img class="image" src="img/banner.jpg" />
+</div>
+
+			<div class="about-information">
+	<h2 class="header">Кто мы и зачем</h2>
+	<article class="content">Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.
+		Telephone: <span class="highlight">703.172.3412</span>
+		Fax: <span class="highlight">703.172.3412</span>
+	</article>
+</div>
+			<div class="about-information">
+	<h2 class="header">Кто мы и зачем</h2>
+	<article class="content">Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.
+		Telephone: <span class="highlight">703.172.3412</span>
+		Fax: <span class="highlight">703.172.3412</span>
+	</article>
+</div>
+		</div>
 	</main>
 	<footer>
 		<div class="footer-layout">
@@ -374,7 +639,7 @@
 </nav>
 		</div>
 	</footer>
-	
+	<link rel="stylesheet" type="text/css" href="a.css">
 	<script type="text/javascript" src="a.js"></script>
 </body>
 <script type="text/javascript" src="b.js"></script>

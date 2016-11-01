@@ -40,6 +40,7 @@
 			margin: 0;
 			line-height: 1.8;
 			padding-bottom: 22px;
+			white-space: pre-line;
 		}
 		> .vendor {
 			margin: 0;
@@ -47,6 +48,61 @@
 			padding-bottom: 22px;
 			> ._ink { color: $secondary-color; }
 		}
+
+		> .option {
+			display: inline-block;
+	    margin: 20px 30px 15px 0;
+	    position: relative;
+	    font-size: 14px;
+	    color: #eee;
+	    z-index: 1;
+	    min-width: 90px;
+	    cursor: pointer;
+
+			&._hasVariants:hover:after {
+				height: 120px; 
+			}
+
+			&._volume:before { content: $font-Flaticon-bottle; }
+			&._rec_mono:before { content: $font-Flaticon-drop; padding-right: 18px;}
+
+			&:before {
+				@include _icon;
+				color: $primary-color;
+				font-size: 50px;
+				padding-right: 7px;
+				vertical-align: middle;
+			}
+			&:after {
+				content: " ";
+				transition: .35s ease;
+				background-color: #aaa;
+				border-radius: 25px;
+				width: 40px;
+				height: 40px;
+				top: 4px;
+				right: -4px;
+				position: absolute;
+				z-index: -1;
+				box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+			}
+		}
+		> .outofstock {
+			display: inline-block;
+			color: #fff;
+			background-color: #444;
+			padding: 14px;
+			line-height: 16px;
+			width: 100%;
+			font-size: 16px;
+			transition: color .35s ease;
+			cursor: default;
+			text-align: center;
+			&:hover { color: $secondary-color; }
+			@media (max-width: $breakpoint-large) { width: 30%; }
+			@media (max-width: $breakpoint-medium) { width: 100%; }
+		}
+
 		> .add {
 			display: inline-block;
 			color: #fff;

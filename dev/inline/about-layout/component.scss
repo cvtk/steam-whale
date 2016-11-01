@@ -1,0 +1,19 @@
+.about-layout {
+	width: 100%;
+	> .header {
+		@extend .base-layout;
+		padding-left: 10%;
+		color: #282828;
+		text-align: left;
+		font-size: 30px;
+		font-weight: 400;
+	}
+	> .banner-image {
+		@extend .base-layout;
+	}
+	> .about-information {
+		@extend .base-layout;
+		@include _clearfix;
+		&:last-child { margin-bottom: 38px; }
+	}
+}

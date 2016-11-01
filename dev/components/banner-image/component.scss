@@ -1,0 +1,9 @@
+.banner-image {
+	position: relative;
+	> .image {
+		display: block;
+		max-width: 100%;
+    height: auto;
+		padding: 0 12px;
+	}
+}

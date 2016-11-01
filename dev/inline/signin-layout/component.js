@@ -3,7 +3,9 @@ $(function() {
 
   refreshSize();
 
-  function refreshSize(){
+  function refreshSize() {
+  	if ($(window).width() > 768) {
      $('#signinLayout').height( $(window).height() - $("header").height() - $("footer").height() );
+  	}
 	}
 });
