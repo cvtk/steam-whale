@@ -1,7 +1,16 @@
 .main-layout {
 	@extend .base-layout;
 	> .category-navigation {
-		@include _clearfix;
 		float: left;
+		width: 75%;
+	}
+
+	> .filter-navigation {
+		float: right;
+		width: 25%;
+	}
+	> .search-box {
+		display: none;
+		width: 100%;
 	}
 }

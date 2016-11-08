@@ -115,11 +115,14 @@ footer {
         display: none; } }
 
 .main-layout > .category-navigation {
-  float: left; }
-  .main-layout > .category-navigation:before, .main-layout > .category-navigation:after {
-    content: "";
-    display: table;
-    clear: both; }
+  float: left;
+  width: 75%; }
+.main-layout > .filter-navigation {
+  float: right;
+  width: 25%; }
+.main-layout > .search-box {
+  display: none;
+  width: 100%; }
 
 .page-layout {
   position: relative;
@@ -294,6 +297,18 @@ footer {
 	<a class="item">Тара и упаковка</a>
 	<a class="item">Все для намотки</a>
 </nav>
+			<nav class="filter-navigation">
+	<span class="item" id="filterNavigationOptions">Фильтр</span>
+	<span class="item" id="filterNavigationSearch">Поиск</span>
+</nav>
+			<div class="search-box" id=searchBox>
+	<input class="search" autocomplete="off" placeholder="Введите название товара">
+	<span class="remove"></span>
+</div>
+			<div class="query-string" id="queryString">
+	<span class="item" data-name="we">Название включает "we"</span>
+	<span class="item" data-name="we">Название включает "weq"</span>
+</div>
 			<div class="products-rowview">
 	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">

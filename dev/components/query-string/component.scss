@@ -1,0 +1,37 @@
+.query-string {
+	padding: 0 12px 20px;
+	> .item {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		line-height: 1.4;
+		font-size: 16px;
+		max-width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		vertical-align: top;
+		overflow: hidden;
+		margin: 0 8px 7px 0; 
+		padding: 5px 14px 5px 37px;
+		border: 1px solid #e0e0e0;
+		border: 1px solid #777;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		transition: .35s ease-in-out;
+		&:before {
+			@include _icon;
+			content: $font-Flaticon-close;
+			font-size: 12px;
+			position: absolute;
+			top: 11px;
+			left: 11px;
+			transition: .35s ease-in-out;
+		}
+		&:hover {
+			text-decoration: line-through;
+			color: #282828;
+			&:before { text-decoration: none; color: $secondary-color; }
+		}
+	}
+}

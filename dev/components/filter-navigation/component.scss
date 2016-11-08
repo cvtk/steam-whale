@@ -1,0 +1,22 @@
+.filter-navigation {
+	  padding: 50px 12px;
+	  text-align: right;
+	> .item {
+		color: $primary-color;
+		transition: .35s ease;
+    cursor: pointer;
+		&._active, &:hover { color: $secondary-color; }
+		&:after { 
+			content: "/";
+    	padding: 0 5px 0 10px;
+    	color: #aaa;
+		}
+		&:last-child:after { content: ""; }
+		@media (max-width: $breakpoint-large) {  &:after {  content: ""; } }
+		@media (max-width: $breakpoint-medium) { 
+    	display: block; 
+    	font-size: 16px;
+    	&:after {  content: ""; }
+    }
+	}
+}
