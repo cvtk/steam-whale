@@ -13,12 +13,14 @@
 
 	> .item {
 		width: 100%;
+		margin-bottom: 20px;
 		&._50p {
 			float: left;
 			width: 48%;
-			.input {
-
-			}
+		}
+		&._50pr {
+			float: right;
+			width: 48%;
 		}
 		> .label {
 			display: inline-block;
@@ -27,16 +29,25 @@
 	    color: #282828;
 	    padding-top: 5px;
 	    padding-bottom: 8px;
+	    > .required {
+	    	padding-left: 5px;
+	    	color: $secondary-color;
+	    	opacity: .9;
+	    }
 		}
 		> .input {
 			display: block;
-    	
+    	width: 100%;
     	line-height: 1.6;
     	outline: 0;
     	padding: 8px 10px;
     	border: 1px solid #e7e7e7;
     	border-radius: 0;
     	box-shadow: none;
+    	transition: .35s ease;
+    	&:focus {
+    		border-bottom: 1px solid $secondary-color;
+    	}
 		}
 
 	}

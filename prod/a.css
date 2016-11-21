@@ -499,9 +499,13 @@ footer {
     padding: 0 0 50px;
     margin: 0; }
   .account-details > .item {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 20px; }
     .account-details > .item._50p {
       float: left;
+      width: 48%; }
+    .account-details > .item._50pr {
+      float: right;
       width: 48%; }
     .account-details > .item > .label {
       display: inline-block;
@@ -510,14 +514,22 @@ footer {
       color: #282828;
       padding-top: 5px;
       padding-bottom: 8px; }
+      .account-details > .item > .label > .required {
+        padding-left: 5px;
+        color: #dc9814;
+        opacity: .9; }
     .account-details > .item > .input {
       display: block;
+      width: 100%;
       line-height: 1.6;
       outline: 0;
       padding: 8px 10px;
       border: 1px solid #e7e7e7;
       border-radius: 0;
-      box-shadow: none; }
+      box-shadow: none;
+      transition: .35s ease; }
+      .account-details > .item > .input:focus {
+        border-bottom: 1px solid #dc9814; }
 
 .banner-image {
   position: relative; }
