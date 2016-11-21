@@ -1,0 +1,43 @@
+.account-details {
+	float: left;
+  width: 66.66666667%;
+	padding: 0 73px 0 12px ;
+	> .title {
+    font-size: 26px;
+    font-weight: 400;
+    color: #282828;
+    line-height: 1.2;
+    padding: 0 0 50px;
+    margin: 0;
+	}
+
+	> .item {
+		width: 100%;
+		&._50p {
+			float: left;
+			width: 48%;
+			.input {
+
+			}
+		}
+		> .label {
+			display: inline-block;
+	    font-size: 16px;
+	    line-height: 1.4;
+	    color: #282828;
+	    padding-top: 5px;
+	    padding-bottom: 8px;
+		}
+		> .input {
+			display: block;
+    	
+    	line-height: 1.6;
+    	outline: 0;
+    	padding: 8px 10px;
+    	border: 1px solid #e7e7e7;
+    	border-radius: 0;
+    	box-shadow: none;
+		}
+
+	}
+}

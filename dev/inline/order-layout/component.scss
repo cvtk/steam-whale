@@ -1,0 +1,4 @@
+.order-outer {
+	@extend .base-layout;
+	@include _clearfix;
+}
