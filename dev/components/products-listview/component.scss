@@ -2,6 +2,19 @@
 	padding: 7px 0;
 	min-height: 200px;
 	overflow-y: auto;
+	&._white_background {
+		> .listview-item {
+			> .title { color: #464646 }
+			> .qty > .input { 
+				&::-webkit-inner-spin-button {
+    		opacity: 1;
+  			}
+				color: $primary-color; 
+			}
+			> .remove { &:hover { color: #464646 } }
+
+		}
+	}	
 	> .listview-item {
 			@include _clearfix;
 			position: relative;
@@ -53,7 +66,17 @@
 			float: left;
 			overflow: hidden;
 			white-space: nowrap;
-			text-overflow: ellipsis;		
+			text-overflow: ellipsis;
+			> .input {
+				border: 0;
+		    background: transparent;
+		    color: #eee;
+		    padding: 0;
+		    padding-left: 5px;
+		    outline: 0;
+		    width: 50px;
+		    line-height: 16px;
+				}
 		}
 		> .price {
 			display: block;

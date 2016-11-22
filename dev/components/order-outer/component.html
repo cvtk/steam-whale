@@ -1,6 +1,22 @@
 <div class="order-outer">
 	@@include('account-details/component.html')
-	<div class="payments-deliveries">
-		
+	<div class="cart-details">
+		<h2 class="title">Корзина</h2>
+		<div class="products-listview _white_background">
+			<div class="listview-item">
+				<img class="thumb" src="img/product-1.jpg" />
+				<a class="title" href="#">Product Title Steam Product lequid</a>
+				<span class="remove" title="Удалить товар"></span>
+				<span class="qty">Количество: <input type="number" step="1" min="1" max="999" name="count" value="1" class="input" /></span>
+				<span class="price">550</span>
+			</div>
+			<div class="listview-item">
+				<img class="thumb" src="img/product-1.jpg" />
+				<a class="title" href="#">Steam Product lequid</a>
+				<button class="remove" type="submit" name="ms2_action" value="cart/remove" data-listview-remove-trigger title="Удалить товар"></button>
+				<span class="qty">Количество: <input type="number" step="1" min="1" max="999" name="count" value="1" class="input" /></span>
+				<span class="price">12250</span>
+			</div>
+		</div>
 	</div>
 </div>

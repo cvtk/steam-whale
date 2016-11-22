@@ -488,8 +488,6 @@ footer {
       clear: both; }
 
 .account-details {
-  float: left;
-  width: 66.66666667%;
   padding: 0 73px 0 12px; }
   .account-details > .title {
     font-size: 26px;
@@ -563,6 +561,16 @@ footer {
   top: 20%;
   font-size: 14px;
   color: #dc9814; }
+
+.cart-details {
+  padding-right: 12px; }
+  .cart-details > .title {
+    font-size: 26px;
+    font-weight: 400;
+    color: #282828;
+    line-height: 1.2;
+    padding: 0 0 50px;
+    margin: 0; }
 
 .category-navigation {
   padding: 50px 12px; }
@@ -863,6 +871,13 @@ footer {
     .next-navigation > .link:hover {
       color: #dc9814; }
 
+.order-outer > .account-details {
+  float: left;
+  width: 66.66666667%; }
+.order-outer > .cart-details {
+  float: right;
+  width: 33.33333333%; }
+
 .product-item {
   position: relative;
   float: left;
@@ -978,6 +993,14 @@ footer {
   padding: 7px 0;
   min-height: 200px;
   overflow-y: auto; }
+  .products-listview._white_background > .listview-item > .title {
+    color: #464646; }
+  .products-listview._white_background > .listview-item > .qty > .input {
+    color: #707070; }
+    .products-listview._white_background > .listview-item > .qty > .input::-webkit-inner-spin-button {
+      opacity: 1; }
+  .products-listview._white_background > .listview-item > .remove:hover {
+    color: #464646; }
   .products-listview > .listview-item {
     position: relative;
     padding-top: 14px;
@@ -1044,6 +1067,15 @@ footer {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
+      .products-listview > .listview-item > .qty > .input {
+        border: 0;
+        background: transparent;
+        color: #eee;
+        padding: 0;
+        padding-left: 5px;
+        outline: 0;
+        width: 50px;
+        line-height: 16px; }
     .products-listview > .listview-item > .price {
       display: block;
       width: 20%;
