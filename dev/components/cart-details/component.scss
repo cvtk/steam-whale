@@ -5,7 +5,27 @@
     font-weight: 400;
     color: #282828;
     line-height: 1.2;
-    padding: 0 0 50px;
+    padding: 50px 0;
     margin: 0;
 	}
+	> .products-listview {
+		> .listview-item {
+				.thumb {
+					@media (max-width: $breakpoint-large) { width: 12% }
+				}
+			  .title { color: #464646 }
+			  .qty {
+				> .reload { color: #464646 }
+				> .input { 
+				&::-webkit-inner-spin-button {
+				opacity: 1;
+				}
+				color: $primary-color; 
+				}
+			}
+			  .price { color: #464646 }
+			  .remove { &:hover { color: #464646 } }
+		}
+	}
+	
 }

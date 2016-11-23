@@ -11,10 +11,11 @@ $(function() {
 		app.minicartWidget.triggers.each(function() {
 			$(this).unbind('click').click( app.minicartWidget.toggle );
 		})
-		var removeTriggers = $("#minicartWidget [data-listview-remove-trigger]");
+		var removeTriggers = $("[data-listview-remove-trigger]");
 		removeTriggers.each(function() {
 			$(this).click(function() {
-				$(this).parent().fadeOut();
+				var id = $(this).parents('.listview-item').data('listview-item-id');
+				$("[data-listview-item-id='" + id +"']").fadeOut(350);
 			})
 		})
 	}

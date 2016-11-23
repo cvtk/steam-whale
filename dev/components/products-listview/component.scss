@@ -2,19 +2,6 @@
 	padding: 7px 0;
 	min-height: 200px;
 	overflow-y: auto;
-	&._white_background {
-		> .listview-item {
-			> .title { color: #464646 }
-			> .qty > .input { 
-				&::-webkit-inner-spin-button {
-    		opacity: 1;
-  			}
-				color: $primary-color; 
-			}
-			> .remove { &:hover { color: #464646 } }
-
-		}
-	}	
 	> .listview-item {
 			@include _clearfix;
 			position: relative;
@@ -24,7 +11,7 @@
 			font-size: 16px;
 			line-height: 36px;
 			&._empty { padding-top: 7px; }
-		> .thumb {
+		  .thumb {
 				display: block;
 				width: 20%;
 				height: 72px;
@@ -32,7 +19,7 @@
 				float: left;
 				@media (max-width: $breakpoint-small) { display: none; }
 		}
-		> .title {
+		  .title {
 				display: block;
 				width: 70%;
 				float: left;
@@ -42,7 +29,7 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 		}
-		> .remove {
+		  .remove {
 			position: absolute;
 			top: 14px;
 			right: 0;
@@ -60,7 +47,7 @@
 					font-size: 11px;
 				}
 		}
-		> .qty {
+		  .qty {
 			display: block;
 			width: 55%;
 			float: left;
@@ -77,8 +64,28 @@
 		    width: 50px;
 		    line-height: 16px;
 				}
+			> .reload {
+				display: none;
+				border: 0;
+		    background: transparent;
+		    color: #eee;
+		    padding: 0;
+		    line-height: 16px;
+		    outline: 0;
+		    padding-left: 5px;
+		    cursor: pointer;
+				&:after { 
+					@include _icon; 
+					content: $font-Flaticon-reload;
+					font-size: 14px;
+					transition: .35s ease;
+				}
+				&:hover:after {
+					color: $secondary-color;
+				}
+			}
 		}
-		> .price {
+		  .price {
 			display: block;
 			width: 20%;
 			color: #eee;

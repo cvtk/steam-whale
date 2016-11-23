@@ -1,17 +1,18 @@
 .account-details {
 	padding: 0 73px 0 12px ;
-	> .title {
+	 .title {
     font-size: 26px;
     font-weight: 400;
     color: #282828;
     line-height: 1.2;
-    padding: 0 0 50px;
+    padding: 50px 0;
     margin: 0;
 	}
 
 	> .item {
 		width: 100%;
 		margin-bottom: 20px;
+		@media (max-width: $breakpoint-small) { width: 100% !important }
 		&._50p {
 			float: left;
 			width: 48%;
@@ -48,5 +49,35 @@
     	}
 		}
 
+	}
+
+	> .payment-method {
+		@include _clearfix;
+		> .payment-item {
+			display: inline-block;
+			position: relative;
+			> .label {
+				display: inline-block;
+	    	position: relative;
+	    	cursor: pointer;
+	    	opacity: .5;
+	    	transition: .35s ease;
+	    	> img {
+					max-width: 100%;
+	    		height: auto;
+	    		vertical-align: middle;
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+	    > .radio:checked + .label {
+				opacity: 1;
+			}
+			> .radio {
+				display: none;
+			}
+			
+		}
 	}
 }
