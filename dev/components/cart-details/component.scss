@@ -8,6 +8,88 @@
     padding: 50px 0;
     margin: 0;
 	}
+	> .agecheck {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		padding-left: 24px;
+		margin-bottom: 15px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 18px;
+			height: 18px;
+			border: 1px solid $primary-color;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+	    left: 9px;
+	    top: 18px;
+	    width: 0;
+	    height: 0;
+	    border-radius: 7px;
+			background-color: $primary-color;
+			transition: .25s ease;
+		}
+	}
+		> .agecheckinput {
+			display: none;
+			&:checked + .agecheck:after {
+				left: 2px;
+	    	top: 11px;
+	    	width: 14px;
+	    	height: 14px;
+			}
+		}
+	> .placeorder {
+		display: block;
+    width: 100%;
+    border: 0;
+    padding: 12px;
+    color: #ffffff;
+  	background-color: #282828;
+  	font-size: 16px;
+  	line-height: 19px;
+  	cursor: pointer;
+  	transition: .35s ease;
+  	text-align: center;
+  	&:hover {background-color: #444;}
+	}
+
+	> .order-cost {
+		margin: 40px 0 15px;
+		> .title {
+		display:inline-block;
+    color: $primary-color;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1;
+    vertical-align: top;
+    padding: 12px 0 22px;
+    width: 65%;
+    text-align: left;
+		}
+		> .cost {
+		display: inline-block;
+    color: $secondary-color;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1;
+    vertical-align: top;
+    padding: 12px 0 22px;
+    width: 35%;
+    text-align: right;
+  		&:after {
+			@include _icon;
+			content: $font-Flaticon-ruble;
+			font-size: 18px;
+		}
+		}
+	}
 	> .products-listview {
 		> .listview-item {
 				.thumb {
