@@ -18,8 +18,7 @@ $(function() {
 		})
 	}
 
-	miniShop2.Order = {
-		getcost: function() {
+	miniShop2.Order.getcost = function() {
 			var callbacks = miniShop2.Order.callbacks;
 			callbacks.getcost.response.success = function(response) {
 				$(miniShop2.Order.orderCost).text(miniShop2.Utils.formatPrice(response.data['cost']));
@@ -28,7 +27,6 @@ $(function() {
 			data[miniShop2.actionName] = 'order/getcost';
 			miniShop2.send(data, miniShop2.Order.callbacks.getcost, miniShop2.Callbacks.Order.getcost);
 		}
-	}
 	
 
 	miniShop2.Cart.totalCount = '.cart-count';

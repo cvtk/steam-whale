@@ -2,7 +2,7 @@
 	padding: 40px 12px;
 	clear: both;
 	> .search {
-		display: block;
+	display: block;
     font-size: 26px;
     font-weight: 300;
     width: 100%;
@@ -13,7 +13,43 @@
     color: #777;
     border-bottom: 1px solid #e7e7e7;
 	}
-	> .remove {
+	> .remove {}
+}
 
-	}
+.vendor-filter {
+    > .input {
+        display: none;
+        &:checked + .label:after {
+            left: 4px;
+            top: 13px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+    > .label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding-left: 24px;
+        margin-bottom: 15px;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $primary-color;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 18px;
+            width: 0;
+            height: 0;
+            background-color: $secondary-color;
+            transition: .25s ease;
+        }
+    }
 }

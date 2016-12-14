@@ -311,13 +311,20 @@ footer {
 	<span class="item" id="filterNavigationSearch">Поиск</span>
 </nav>
 			<div class="search-box" id=searchBox>
+	<div class="vendor-filter">
+		<input type="checkbox" class="input" id="tpa" checked />
+		<label class="label" for="tpa">The Perfumer's Apprentice</label>
+
+		<input type="checkbox" class="input" id="capella" checked />
+		<label class="label" for="capella">Capella Flavors</label>
+
+		<input type="checkbox" class="input" id="steam-whale" checked />
+		<label class="label" for="steam-whale">Stean Whale</label>
+	</div>
 	<input class="search" autocomplete="off" placeholder="Введите название товара">
 	<span class="remove"></span>
 </div>
-			<div class="query-string" id="queryString">
-	<span class="item" data-name="we">Название включает "we"</span>
-	<span class="item" data-name="we">Название включает "weq"</span>
-</div>
+			<div class="query-string" id="queryString"></div>
 			<div class="products-rowview">
 	<a class="product-item _outofstock" href="#">
 	<div class="thumb-box">
@@ -672,7 +679,9 @@ footer {
 		<input class="input" type="phone" name="phone" id="accountDetailsPhone" required />
 	</div>
 
-	
+	<input type="submit" class="button" value="Сохранить">
+
+
 	<div class="payment-method">
 	<h2 class="title">Способ оплаты</h2>
 		<div class="payment-item" title="hey!!!">
