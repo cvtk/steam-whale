@@ -1,0 +1,7 @@
+.post-layout {
+	width: 100%;
+	@include _clearfix;
+	> .single-post {
+		@extend .base-layout; 
+	}
+}

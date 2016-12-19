@@ -37,10 +37,12 @@ $(function() {
 			}
 
 			$('#queryString > .item[data-name]').data('name', query ).html('Название включает "' + query + '"');
+			var category = $('#queryString > .item[data-category]').data('category');
 
 	    $.post('/ajax', {
 				action: 'search', 
-				search: query }, function(response) {
+				search: query,
+				category: category }, function(response) {
 					if ($(response).children().length < 12) {
 						$('span[data-action="loadMore"]').fadeOut(350);
 					} 

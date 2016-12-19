@@ -1,0 +1,63 @@
+.single-post {
+	> .header, .image, .post-teaser, .post-content {
+		padding: 0 12px;
+		margin: 0;
+	}
+
+	> .meta {
+		margin: 0 12px;
+	}
+	> .header {
+		color: #282828;
+		text-align: left;
+		font-size: 30px;
+		font-weight: 400;
+	}
+	> .meta {
+		display: block;
+		border-left: 4px solid $secondary-color;
+		padding: 0 15px;
+		line-height: 1.5;
+	}
+	> .image {
+		max-width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+	}
+
+	> .post-teaser {
+		@include _clearfix;
+		> .teaser {
+			float: left;
+			width: 66.666667%;
+			margin: 0;
+			padding-right: 15px;
+			@media (max-width: $breakpoint-medium) { width: 100%; }
+		}
+		> .vk-widget {
+		float: right;
+		@media (max-width: $breakpoint-medium) { padding-top: 15px; }
+		}
+	}
+	> .post-content {
+		> .quotes {
+				display: block;
+				font-size: 26px;
+				color: #282828;
+				background: #eee;
+				padding-left: 15px;
+				margin: 30px 0 15px;
+				border-left: 4px solid $secondary-color;
+			}
+	}
+	.social-menu._post {
+	display: block;
+	text-align: center;
+	color: $secondary-color;
+	padding: 18px 0;
+		> .item:after { color: $primary-color; }
+		> .item:hover:after { color: #282828; }
+	}
+
+}

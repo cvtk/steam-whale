@@ -1,0 +1,97 @@
+.news-list {
+	> .header {
+		padding-left: 10%;
+    color: #282828;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+	}
+	> .blog-content {
+		float: left;
+		width: 66.666667%;
+		padding: 0 12px;
+		@media (max-width: $breakpoint-medium) { width: 100%; }
+		> .blog-item {
+			@include _clearfix;
+			padding-bottom: 30px;
+			> .header {
+				font-size: 26px;
+				font-weight: 400;
+				color: #282828;
+				line-height: 1.2;
+				padding: 15px 0; 
+				margin: 0;
+			}
+			> .image {
+					height: 330px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+			}
+			> .meta {
+					display: block;
+					border-left: 4px solid #dc9814;
+					padding: 0 15px;
+					margin: 0;
+					margin-bottom: 30px;
+					line-height: 1.5;
+					
+			}
+			> .teaser {
+				padding-bottom: 15px;
+			}
+			> .readmore {
+					display: inline-block;
+					font-size: 13px;
+					font-weight: 600;
+					text-transform: uppercase;
+					float: right;
+    			margin-top: 55px;
+    			margin-bottom: 15px; 
+					color: $primary-color;
+					border: 1px solid rgba(0, 0, 0, 0.25);
+					padding: 12px 35px;
+					text-decoration: none;
+					text-align: center;
+					line-height: 17px;
+					transition: .35s ease-in-out;
+					&:hover {
+						background: $secondary-color;
+						color: #fff;
+						border: 1px solid #fff;
+					}
+			}
+		}
+		> .blog-pagination {
+			margin: 0 auto;
+			width: 330px;
+			text-align: center;
+			> .item {
+				display: inline-block;
+		    font-size: 13px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    margin: 15px 5px;
+		    color: #707070;
+		    border: 1px solid rgba(0, 0, 0, 0.25);
+		    padding: 5px 15px;
+		    text-decoration: none;
+		    text-align: center;
+		    transition: .35s ease-in-out;
+		    &:hover, &._active {
+					background: $secondary-color;
+					color: #fff;
+					border: 1px solid #fff;
+				}
+			}
+		}
+	}
+	> .widgets-sidebar {
+		float: right;
+		width: 33.333333%;
+		padding: 0 12px;
+		height: 1200px;
+		@media (max-width: $breakpoint-medium) { display: none; }
+	}
+	@include _clearfix;
+}

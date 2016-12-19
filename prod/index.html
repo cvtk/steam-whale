@@ -4,21 +4,21 @@
 	<title>Steam Whale</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
-		.base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .order-outer, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+		.base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .invoice-layout > .order-form, .main-layout, .order-outer, .post-layout > .single-post, .posts-layout > .news-list, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
   padding: 15px;
   min-height: 1px;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .order-outer, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .invoice-layout > .order-form, .main-layout, .order-outer, .post-layout > .single-post, .posts-layout > .news-list, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
       width: 750px; } }
   @media (min-width: 992px) {
-    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .order-outer, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .invoice-layout > .order-form, .main-layout, .order-outer, .post-layout > .single-post, .posts-layout > .news-list, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .order-outer, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .invoice-layout > .order-form, .main-layout, .order-outer, .post-layout > .single-post, .posts-layout > .news-list, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
       width: 1170px; } }
   @media (min-width: 1280px) {
-    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .main-layout, .order-outer, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
+    .base-layout, .about-layout > .header, .about-layout > .banner-image, .about-layout > .about-information, .footer-layout, .header-layout, .invoice-layout > .order-form, .main-layout, .order-outer, .post-layout > .single-post, .posts-layout > .news-list, .single-layout > .single-navigation, .single-layout > .products-singleview, .single-layout > .related-products {
       width: 1280px; } }
 
 header {
@@ -114,6 +114,13 @@ footer {
       .header-layout > .user-menu {
         display: none; } }
 
+.invoice-layout {
+  width: 100%; }
+  .invoice-layout:before, .invoice-layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .main-layout > .category-navigation {
   float: left;
   width: 75%; }
@@ -146,6 +153,20 @@ footer {
     .page-layout > .mobile-dropdown._hidden {
       top: -100%; }
 
+.post-layout {
+  width: 100%; }
+  .post-layout:before, .post-layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.posts-layout {
+  width: 100%; }
+  .posts-layout:before, .posts-layout:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .signin-layout {
   background-color: #f5f5f5;
   min-height: 575px;
@@ -162,7 +183,6 @@ footer {
     padding: 65px 27px;
     margin: 0 auto; }
   .signin-layout > .register-form {
-    display: none;
     position: relative;
     width: 100%;
     min-width: 330px;
@@ -244,6 +264,7 @@ footer {
 </div>
 			<nav class="user-menu">
 	<a class="item" href="#">Вход</a>
+	<a class="item _logout" href="/logout"></a>
 	<a class="item" href="#" data-minicart-trigger>Корзина 
 		<span class="cart-count" id="cartCount">2</span>
 	</a>
@@ -620,7 +641,7 @@ footer {
 	<a class="lostpassword" href="#">Забыли пароль?</a>
 	<input type="submit" class="button" name="login" value="Вход">
 	<span class="or">или</span>
-	<span class="register" data-form-toggle>Регистрация</span>
+	<a class="register" href="#">Регистрация</a>
 </form>
 			<form class="register-form">
 	<h2 class="title">Регистрация</h2>
@@ -630,7 +651,7 @@ footer {
 	<input type="password" class="input" name="email" id="signinFormPassword" value="">
 	<input type="submit" class="button" name="login" value="Регистрация">
 	<span class="or">или</span>
-	<span class="signin" data-form-toggle>Вход</span>
+	<a class="signin" href="#">Вход</a>
 </form>
 		</div>
 		<div class="about-layout">
@@ -681,26 +702,31 @@ footer {
 
 	<input type="submit" class="button" value="Сохранить">
 
+	<div class="payment-delivery">
+		<div class="delivery">
+			<h2 class="title">Способ доставки</h2>
+			<input class="radioiteminput" type="radio" name="address" id="1" required />
+				<label class="radioitem" for="1" title="Самовывоз со склада на пр. Октября 72а/2">
+					Самовывоз
+				</label>
 
-	<div class="payment-method">
-	<h2 class="title">Способ оплаты</h2>
-		<div class="payment-item" title="hey!!!">
-			<input type="radio" class="radio" name="payment" value="" id="1">
-			<label class="label" for="1">
-				<img src="img/yandex-money-logo.png">
-			</label>
+				<input class="radioiteminput" type="radio" name="address" id="2" required />
+				<label class="radioitem" for="2" title="Стоимость доставки 100 рублей. При заказе от 750 рублей доставка бесплатна.">
+					Доставка по Ярославлю
+				</label>
+
 		</div>
-		<div class="payment-item" title="hey!!!">
-			<input type="radio" class="radio" name="payment" value="" id="2">
-			<label class="label" for="2">
-				<img src="img/yandex-money-logo.png">
-			</label>
-		</div>
-		<div class="payment-item" title="hey!!!">
-			<input type="radio" class="radio" name="payment" value="" id="3">
-			<label class="label" for="3">
-				<img src="img/yandex-money-logo.png">
-			</label>
+		<div class="payment">
+			<h2 class="title">Оплата</h2>
+			<input class="radioiteminput" type="radio" name="address" id="1" required />
+				<label class="radioitem" for="1" title="Самовывоз со склада на пр. Октября 72а/2">
+					Самовывоз
+				</label>
+
+				<input class="radioiteminput" type="radio" name="address" id="2" required />
+				<label class="radioitem" for="2" title="Стоимость доставки 100 рублей. При заказе от 750 рублей доставка бесплатна.">
+					Доставка по Ярославлю
+				</label>
 		</div>
 	</div>
 </div>
@@ -738,6 +764,56 @@ footer {
 	</div>
 </div>
 		</div>
+		<div class="post-layout">
+			<div class="single-post">
+	<h1 class="header">Заголовок</h1>
+	<span class="meta">Публикация от 4 января, 2017</span>
+	<img class="image" src="img/banner.jpg">
+	<article class="post-teaser">
+		<p class="teaser">
+			Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.
+		</p>
+		<div class="vk-widget" id="vkWidget"></div> 
+	</article>
+	<article class="post-content">
+			<span class="quotes">Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke.</span>
+			Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.Messenger bag raw denim health goth pour-over, twee Neutra Vice ethical bespoke. Irony hashtag mixtape kogi blog you probably haven’t heard of them, fashion axe readymade scenester flexitarian. Ugh bespoke actually vinyl photo booth tattooed paleo Pinterest Schlitz. Cronut hella selfies, flexitarian sriracha keffiyeh Intelligentsia biodiesel.
+	</article>
+	<nav class="social-menu _post">
+			Интересно? Поделитесь с друзьями
+			<a class="item _vk" target="_blank" href="#"></a>
+			<a class="item _ok" target="_blank" href="#"></a>
+			<a class="item _facebook" target="_blank" href="#"></a>
+			<a class="item _twitter" target="_blank" href="#"></a>
+		</nav>
+</div>
+		</div>
+		<div class="posts-layout">
+			<div class="news-list">
+	<h1 class="header">Свежие новости вейпинга</h1>
+	<div class="blog-content">
+		<article class="blog-item">
+			<div class="image" style="background-image: url('img/banner.jpg');"></div>
+			<h2 class="header">Заголовок</h2>
+			<p class="meta">Публикация от 17 окт 2016 г.</p>
+			<span class="teaser">
+				Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque...
+			</span>
+			<a href="#" class="readmore">Читать далее</a>
+		</article>
+		<div class="blog-pagination">
+			<a class="item" href="#">1</a>
+			<a class="item" href="#">2</a>
+			<a class="item" href="#">3</a>
+			...
+			<a class="item" href="#">98</a>
+		</div>
+	</div>
+	<sidebar class="widgets-sidebar">
+		<div id="vkPublications"></div>
+	</sidebar>
+</div>
+		</div>
 	</main>
 	<footer>
 		<div class="footer-layout">
@@ -755,6 +831,7 @@ footer {
 		</div>
 	</footer>
 	<link rel="stylesheet" type="text/css" href="a.css">
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
 	<script type="text/javascript" src="a.js"></script>
 </body>
 <script type="text/javascript" src="b.js"></script>

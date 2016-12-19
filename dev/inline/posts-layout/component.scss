@@ -1,0 +1,7 @@
+.posts-layout {
+	width: 100%;
+	@include _clearfix;
+	> .news-list {
+		@extend .base-layout;
+	}
+}

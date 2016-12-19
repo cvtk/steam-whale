@@ -70,34 +70,53 @@
 
 	}
 
-	> .payment-method {
-		@include _clearfix;
-		> .payment-item {
-			display: inline-block;
-			position: relative;
-			max-width: 100px;
-			> .label {
-				display: inline-block;
-	    	position: relative;
-	    	cursor: pointer;
-	    	opacity: .5;
-	    	transition: .35s ease;
-	    	> img {
-					max-width: 100%;
-	    		height: auto;
-	    		vertical-align: middle;
-				}
-				&:hover {
-					opacity: 1;
-				}
+> .payment-delivery {
+	margin-top: 30px;
+	@include _clearfix;
+
+	> .payment, .delivery {
+			float: left;
+			width: 50%;
+			@media (max-width: $breakpoint-medium) { width: 100% }
+
+			> .radioitem {
+				display: block;
+				position: relative;
+				cursor: pointer;
+				padding-left: 24px;
+				margin-bottom: 15px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 9px;
+				width: 18px;
+				height: 18px;
+				border-radius: 10px;
+				border: 1px solid $primary-color;
 			}
-	    > .radio:checked + .label {
-				opacity: 1;
+			&:after {
+				content: "";
+				position: absolute;
+		    left: 10px;
+	    	top: 18px;
+		    width: 0;
+		    height: 0;
+		    border-radius: 7px;
+				background-color: $secondary-color;
+				transition: .25s ease;
 			}
-			> .radio {
+		}
+			> .radioiteminput {
 				display: none;
+				&:checked + .radioitem:after {
+			    left: 4px;
+			    top: 13px;
+			    width: 10px;
+			    height: 10px;
+				}
 			}
-			
 		}
 	}
 }

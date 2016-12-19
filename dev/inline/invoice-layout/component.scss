@@ -1,0 +1,7 @@
+.invoice-layout {
+	width: 100%;
+	@include _clearfix;
+	> .order-form {
+		@extend .base-layout;
+	}
+}
