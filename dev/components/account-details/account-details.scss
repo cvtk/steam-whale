@@ -16,6 +16,7 @@
     border: 0;
     padding: 12px;
     color: #ffffff;
+    border: 1px solid #282828;
   	background-color: #282828;
   	font-size: 16px;
   	line-height: 19px;
@@ -26,6 +27,15 @@
   	outline: 0;
   	@media (max-width: $breakpoint-small) { width: 100% !important }
   	&:hover {background-color: #444;}
+  	&._chPswd {
+			float: left;
+			background-color: #fff;
+			color: #282828;
+			&:hover {
+				background-color: #282828;
+				color: #fff;
+			}
+  	}
 	}
 
 	> .item {

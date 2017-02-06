@@ -1,0 +1,8 @@
+.page-layout {
+	> .mobile-dropdown {
+		top: 68px;
+		left: 0;
+		width: 100%;
+		&._hidden { top: -100%; }
+	}
+}

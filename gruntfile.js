@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                     src: [
                     'dev/libs/fonts/*.{eot,svg,ttf,woff,woff2}',
                     'dev/fonts/**/*.{eot,svg,ttf,woff,woff2}',
-                    'dev/components/**/*.{eot,svg,ttf,woff,woff2}'
+                    'dev/components/**/*.{eot,svg,ttf,woff,woff2}',
+                    'dev/inline/**/*.{eot,svg,ttf,woff,woff2}'
                     ],
                     dest:"prod/fonts/",
                     flatten: true
@@ -47,7 +48,6 @@ module.exports = function(grunt) {
             },
             css_inline: {
                 src: [
-                		'dev/components/theme-options.scss',
                     'dev/inline/**/*.{scss,css}'
                 ],
                 dest: 'dev/tmp/inline.scss',
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                		'dev/tmp/inline.css': 'dev/tmp/inline.scss',
+                	'dev/tmp/inline.css': 'dev/tmp/inline.scss',
                     'prod/a.css': 'dev/tmp/build.scss',
                 }
             }

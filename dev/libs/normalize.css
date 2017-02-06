@@ -20,8 +20,17 @@ html {
 
 body {
   padding:0;
-    margin:0;
+  margin:0;
   height: 100%;
+  position: relative;
+  color: #777777;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  min-width: 330px;
+  padding-top: 87px;
 }
 
 /* HTML5 display definitions
@@ -97,6 +106,7 @@ template, /* 1 */
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none;
 }
 
 /**
